@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3>Report Stok</h3>
+
+<table class="table table-bordered mt-4">
+    <thead class="table-light">
+        <tr>
+            <th>Nama Kabel</th>
+            <th>Total Produksi</th>
+            <th>Total Pengiriman</th>
+            <th>Stok Akhir</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for r in report_data %}
+        <tr>
+            <td>{{ r.nama }}</td>
+            <td>{{ r.produksi }}</td>
+            <td>{{ r.pengiriman }}</td>
+            <td>{{ r.stok }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

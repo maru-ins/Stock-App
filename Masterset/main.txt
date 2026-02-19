@@ -1,0 +1,166 @@
+from fastapi import FastAPI, Request, Form
+from fastapi.responses import RedirectResponse, JSONResponse
+from fastapi.templating import Jinja2Templates
+import sqlite3
+
+app = FastAPI()
+templates = Jinja2Templates(directory="templates")
+
+
+# ================= DATABASE INIT =================
+def init_db():
+    conn = sqlite3.connect("database.db")
+    c = conn.cursor()
+
+    # Kategori
+    c.execute("""
+    CREATE TABLE IF NOT EXISTS kategori (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        nama_kategori TEXT NOT NULL
+    )
+    """)
+
+    # Produk
+    c.execute("""
+    CREATE TABLE IF NOT EXISTS produk (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        nama_kabel TEXT NOT NULL,
+        kategori_id INTEGER,
+        FOREIGN KEY (kategori_id) REFERENCES kategori(id)
+    )
+    """)
+
+    # Transaksi Mingguan
+    c.execute("""
+    CREATE TABLE IF NOT EXISTS transaksi_mingguan (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        produk_id INTEGER,
+        bulan INTEGER,
+        tahun INTEGER,
+        minggu INTEGER,
+        produksi REAL DEFAULT 0,
+        pengiriman REAL DEFAULT 0,
+        FOREIGN KEY (produk_id) REFERENCES produk(id)
+    )
+    """)
+
+    conn.commit()
+    conn.close()
+
+init_db()
+
+
+# ================= DASHBOARD (INDEX) =================
+@app.get("/")
+def dashboard(request: Request):
+    conn = sqlite3.connect("database.db")
+    c = conn.cursor()
+
+    c.execute("SELECT SUM(produksi) FROM transaksi_mingguan")
+    total_produksi = c.fetchone()[0] or 0
+
+    c.execute("SELECT SUM(pengiriman) FROM transaksi_mingguan")
+    total_pengiriman = c.fetchone()[0] or 0
+
+    stok_akhir = total_produksi - total_pengiriman
+
+    conn.close()
+
+    return templates.TemplateResponse("dashboard.html", {
+        "request": request,
+        "total_produksi": total_produksi,
+        "total_pengiriman": total_pengiriman,
+        "stok_akhir": stok_akhir
+    })
+
+
+# ================= INPUT PAGE =================
+@app.get("/input")
+def input_page(request: Request):
+    conn = sqlite3.connect("database.db")
+    c = conn.cursor()
+
+    c.execute("SELECT * FROM kategori")
+    kategori = c.fetchall()
+
+    conn.close()
+
+    return templates.TemplateResponse("input_stok.html", {
+        "request": request,
+        "kategori": kategori
+    })
+
+
+# ================= FILTER PRODUK BY KATEGORI =================
+@app.get("/produk/by-kategori/{kategori_id}")
+def get_produk_by_kategori(kategori_id: int):
+    conn = sqlite3.connect("database.db")
+    c = conn.cursor()
+
+    c.execute("SELECT id, nama_kabel FROM produk WHERE kategori_id = ?", (kategori_id,))
+    data = c.fetchall()
+
+    conn.close()
+
+    return JSONResponse([
+        {"id": row[0], "nama_kabel": row[1]} for row in data
+    ])
+
+
+# ================= SAVE INPUT =================
+@app.post("/input")
+def save_input(
+    produk_id: int = Form(...),
+    bulan: int = Form(...),
+    tahun: int = Form(...),
+    minggu: int = Form(...),
+    produksi: float = Form(0),
+    pengiriman: float = Form(0),
+):
+    conn = sqlite3.connect("database.db")
+    c = conn.cursor()
+
+    c.execute("""
+        INSERT INTO transaksi_mingguan
+        (produk_id, bulan, tahun, minggu, produksi, pengiriman)
+        VALUES (?, ?, ?, ?, ?, ?)
+    """, (produk_id, bulan, tahun, minggu, produksi, pengiriman))
+
+    conn.commit()
+    conn.close()
+
+    return RedirectResponse("/input", status_code=303)
+
+
+# ================= REPORT =================
+@app.get("/report")
+def report_page(request: Request):
+    conn = sqlite3.connect("database.db")
+    c = conn.cursor()
+
+    c.execute("""
+        SELECT p.nama_kabel,
+               SUM(t.produksi),
+               SUM(t.pengiriman)
+        FROM transaksi_mingguan t
+        JOIN produk p ON t.produk_id = p.id
+        GROUP BY t.produk_id
+    """)
+
+    data = c.fetchall()
+    conn.close()
+
+    report_data = []
+    for row in data:
+        stok = (row[1] or 0) - (row[2] or 0)
+        report_data.append({
+            "nama": row[0],
+            "produksi": row[1] or 0,
+            "pengiriman": row[2] or 0,
+            "stok": stok
+        })
+
+    return templates.TemplateResponse("report_stok.html", {
+        "request": request,
+        "report_data": report_data
+    })

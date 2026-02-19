@@ -1,0 +1,5 @@
+K@belind0!Kim
+
+uvicorn main:app --reload
+
+D:/Project_Stok/stock_app/.venv/Scripts/Activate.ps1

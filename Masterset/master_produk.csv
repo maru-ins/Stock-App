@@ -1,0 +1,602 @@
+﻿nama_kabel;nama_kategori;kode_design
+  Cu/PVC (NYA) 1.5 mm2 re 450/750 V;Building Wire;11-10011-01
+  Cu/PVC (NYA) 1.5 mm2 re 450/750 V;Building Wire;11-10011-02
+  Cu/PVC (NYA) 1.5 mm2 re 450/750 V;Building Wire;11-10011-03
+  Cu/PVC (NYA) 1.5 mm2 re 450/750 V;Building Wire;11-10011-04
+  Cu/PVC (NYA) 1.5 mm2 re 450/750 V;Building Wire;11-10011-07
+  Cu/PVC (NYA) 1.5 mm2 re 450/750 V;Building Wire;11-10011-05
+  Cu/PVC (NYA) 1.5 mm2 rm 450/750 V;Building Wire;11-10051-01
+  Cu/PVC (NYA) 1.5 mm2 rm 450/750 V;Building Wire;11-10051-02
+  Cu/PVC (NYA) 1.5 mm2 rm 450/750 V;Building Wire;11-10051-03
+  Cu/PVC (NYA) 1.5 mm2 rm 450/750 V;Building Wire;11-10051-04
+  Cu/PVC (NYA) 1.5 mm2 rm 450/750 V;Building Wire;11-10051-05
+  Cu/PVC (NYA) 10 mm2 re 450/750 V;Building Wire;11-10021-01
+  Cu/PVC (NYA) 10 mm2 re 450/750 V;Building Wire;11-10039-01
+  Cu/PVC (NYA) 10 mm2 re 450/750 V;Building Wire;11-10039-12
+  Cu/PVC (NYA) 2.5 mm2 re 450/750 V;Building Wire;11-10012-01
+  Cu/PVC (NYA) 2.5 mm2 re 450/750 V;Building Wire;11-10012-02
+  Cu/PVC (NYA) 2.5 mm2 re 450/750 V;Building Wire;11-10012-03
+  Cu/PVC (NYA) 2.5 mm2 re 450/750 V;Building Wire;11-10012-04
+  Cu/PVC (NYA) 2.5 mm2 re 450/750 V;Building Wire;11-10012-05
+  Cu/PVC (NYA) 2.5 mm2 re 450/750 V;Building Wire;11-10012-07
+  Cu/PVC (NYA) 2.5 mm2 rm 450/750 V;Building Wire;11-10052-01
+  Cu/PVC (NYA) 2.5 mm2 rm 450/750 V;Building Wire;11-10052-02
+  Cu/PVC (NYA) 2.5 mm2 rm 450/750 V;Building Wire;11-10052-03
+  Cu/PVC (NYA) 2.5 mm2 rm 450/750 V;Building Wire;11-10052-04
+  Cu/PVC (NYA) 2.5 mm2 rm 450/750 V;Building Wire;11-10052-05
+  Cu/PVC (NYA) 4 mm2 re 450/750 V;Building Wire;11-10034-01
+  Cu/PVC (NYA) 4 mm2 re 450/750 V;Building Wire;11-10034-02
+  Cu/PVC (NYA) 4 mm2 re 450/750 V;Building Wire;11-10034-03
+  Cu/PVC (NYA) 4 mm2 re 450/750 V;Building Wire;11-10034-04
+  Cu/PVC (NYA) 4 mm2 re 450/750 V;Building Wire;11-10034-05
+  Cu/PVC (NYA) 4 mm2 re 450/750 V;Building Wire;11-10019-01
+  Cu/PVC (NYA) 4 mm2 re 450/750 V;Building Wire;11-10019-02
+  Cu/PVC (NYA) 4 mm2 re 450/750 V;Building Wire;11-10019-03
+  Cu/PVC (NYA) 4 mm2 re 450/750 V;Building Wire;11-10019-04
+  Cu/PVC (NYA) 4 mm2 re 450/750 V;Building Wire;11-10034-05
+  Cu/PVC (NYA) 6 mm2 re 450/750 V;Building Wire;11-10037-01
+  Cu/PVC (NYA) 6 mm2 re 450/750 V;Building Wire;11-10037-03
+  Cu/PVC (NYA) 6 mm2 re 450/750 V;Building Wire;11-10037-10
+  Cu/PVC/PVC (NYM) 2 x 1.5 mm2 re 300/500 V;Building Wire;11-10010-01
+  Cu/PVC/PVC (NYM) 2 x 1.5 mm2 re 300/500 V;Building Wire;11-10010-03
+  Cu/PVC/PVC (NYM) 2 x 2.5 mm2 re 300/500 V;Building Wire;11-10033-01
+  Cu/PVC/PVC (NYM) 2 x 2.5 mm2 re 300/500 V;Building Wire;11-10033-02
+  Cu/PVC/PVC (NYM) 3 x 1.5 mm2 re 300/500 V;Building Wire;11-10024-01
+  Cu/PVC/PVC (NYM) 3 x 1.5 mm2 re 300/500 V;Building Wire;11-10024-02
+  Cu/PVC/PVC (NYM) 3 x 2.5 mm2 re 300/500 V;Building Wire;11-10009-02
+  Cu/PVC/PVC (NYM) 3 x 2.5 mm2 re 300/500 V;Building Wire;11-10009-01
+  Cu/PVC/PVC (NYM) 3 x 4 mm2 re 300/500 V;Building Wire;11-10022-01
+  Cu/PVC/PVC (NYM) 3 x 4 mm2 re 300/500 V;Building Wire;11-10022-02
+  Cu/PVC/PVC (NYM) 3 x 6 mm2 re 300/500 V;Building Wire;11-10038-02
+  Cu/PVC/PVC (NYM) 4 x 1.5 mm2 re 300/500 V;Building Wire;11-10032-01
+  Cu/PVC/PVC (NYM) 4 x 1.5 mm2 re 300/500 V;Building Wire;11-10032-02
+  Cu/PVC/PVC (NYM) 4 x 2.5 mm2 re 300/500 V;Building Wire;11-10023-01
+  Cu/PVC/PVC (NYM) 4 x 2.5 mm2 re 300/500 V;Building Wire;11-10023-04
+  Cu/PVC/PVC (NYM) 4 x 4 mm2 re 300/500 V;Building Wire;11-10036-01
+  Cu/PVC/PVC (NYM) 4 x 4 mm2 re 300/500 V;Building Wire;11-10036-02
+  Cu/PVC/PVC (NYM) 4 x 6 mm2 re 300/500 V;Building Wire;11-10050-02
+  Cu/PVC/PVC (NYY) 12 x 1.5 mm2 rm 0.6/1(1.2)kV;Building Wire;21-10147-01
+  Cu/PVC/PVC (NYY) 14 x 1.5 mm2 rm 0.6/1(1.2)kV;Building Wire;21-10643-01
+  Cu/PVC/PVC (NYY) 2 x 1.5 mm2 rm 0.6/1(1.2)kV;Building Wire;21-10131-01
+  Cu/PVC/PVC (NYY) 2 x 1.5 mm2 rm 0.6/1(1.2)kV;Building Wire;21-10131-02
+  Cu/PVC/PVC (NYY) 2 x 2.5 mm2 rm 0.6/1(1.2)kV;Building Wire;21-10123-01
+  Cu/PVC/PVC (NYY) 2 x 2.5 mm2 rm 0.6/1(1.2)kV;Building Wire;21-10123-02
+  Cu/PVC/PVC (NYY) 2 x 4 mm2 rm 0.6/1(1.2)kV;Building Wire;21-10155-01
+  Cu/PVC/PVC (NYY) 2 x 6 mm2 rm 0.6/1(1.2)kV;Building Wire;21-10181-01
+  Cu/PVC/PVC (NYY) 3 x 1.5 mm2 rm 0.6/1(1.2)kV;Building Wire;21-10126-01
+  Cu/PVC/PVC (NYY) 3 x 1.5 mm2 rm 0.6/1(1.2)kV;Building Wire;21-10126-02
+  Cu/PVC/PVC (NYY) 1 x 10 mm2 rm 0.6/1(1.2)kV;Building Wire;21-10190-01
+  Cu/PVC/PVC (NYY) 3 x 10 mm2 rm 0.6/1(1.2)kV;Building Wire;21-10127-01
+  Cu/PVC/PVC (NYY) 2 x 10 mm2 rm 0.6/1(1.2)kV;Building Wire;21-10140-01
+  Cu/PVC/PVC (NYY) 2 x 10 mm2 rm 0.6/1(1.2)kV;Building Wire;21-10179-01
+  Cu/PVC/PVC (NYY) 3 x 2.5 mm2 rm 0.6/1(1.2)kV;Building Wire;21-10041-01
+  Cu/PVC/PVC (NYY) 3 x 2.5 mm2 re 0.6/1(1.2)kV;Building Wire;21-10072-01
+  Cu/PVC/PVC (NYY) 3 x 2.5 mm2 re 0.6/1(1.2)kV;Building Wire;21-10072-10
+  Cu/PVC/PVC (NYY) 3 x 4 mm2 re 0.6/1(1.2)kV;Building Wire;21-10051-01
+  Cu/PVC/PVC (NYY) 3 x 4 mm2 re 0.6/1(1.2)kV;Building Wire;21-10073-01
+  Cu/PVC/PVC (NYY) 3 x 6 mm2 re 0.6/1(1.2)kV;Building Wire;21-10069-01
+  Cu/PVC/PVC (NYY) 3 x 6 mm2 re 0.6/1(1.2)kV;Building Wire;21-10082-01
+  Cu/PVC/PVC (NYY) 4 x 10 mm2 re 0.6/1(1.2)kV;Building Wire;21-10045-01
+  Cu/PVC/PVC (NYY) 4 x 1.5 mm2 rm 0.6/1(1.2)kV;Building Wire;21-10135-01
+  Cu/PVC/PVC (NYY) 4 x 2.5 mm2 rm 0.6/1(1.2)kV;Building Wire;21-10042-01
+  Cu/PVC/PVC (NYY) 4 x 2.5 mm2 rm 0.6/1(1.2)kV;Building Wire;21-10119-06
+  Cu/PVC/PVC (NYY) 4 x 4 mm2 rm 0.6/1(1.2)kV;Building Wire;21-10043-01
+  Cu/PVC/PVC (NYY) 4 x 4 mm2 rm 0.6/1(1.2)kV;Building Wire;21-10043-03
+  Cu/PVC/PVC (NYY) 4 x 4 mm2 rm 0.6/1(1.2)kV;Building Wire;21-10118-01
+  Cu/PVC/PVC (NYY) 4 x 6 mm2 re 0.6/1(1.2)kV;Building Wire;21-10044-01
+  Cu/PVC/PVC (NYY) 4 x 6 mm2 re 0.6/1(1.2)kV;Building Wire;21-10044-10
+  Cu/PVC/PVC (NYY) 5 x 10 mm2 re 0.6/1(1.2)kV;Building Wire;21-10133-01
+  Cu/PVC/PVC (NYY) 5 x 4 mm2 re 0.6/1(1.2)kV;Building Wire;21-10114-01
+  Cu/PVC/PVC (NYY) 5 x 2.5 mm2 re 0.6/1(1.2)kV;Building Wire;21-10182-01
+  Cu/PVC/PVC (NYY) 5 x 6 mm2 re 0.6/1(1.2)kV;Building Wire;21-10068-01
+  Cu/PVC/PVC (NYY) 7 x 1.5 mm2 re 0.6/1(1.2)kV;Building Wire;21-10146-01
+  Cu/PVC/SWA/PVC (NYRGbY) 2 x 1.5 mm2 re 0.6/1 (1.2)kV;Building Wire;21-10150-02
+  Cu/PVC/SWA/PVC (NYRGbY) 2 x 2.5 mm2 re 0.6/1 (1.2)kV;Building Wire;21-10034-01
+  Cu/PVC/SWA/PVC (NYRGbY) 2 x 10 mm2 re 0.6/1 (1.2)kV;Building Wire;21-10156-01
+  Cu/PVC/SWA/PVC (NYRGbY) 2 x 6 mm2 re 0.6/1 (1.2)kV;Building Wire;21-10061-01
+  Cu/PVC/SWA/PVC (NYRGbY) 16 x 1.5 mm2 re 0.6/1 (1.2)kV;Building Wire;21-10224-01
+  Cu/PVC/SWA/PVC (NYRGbY) 3 x 1.5 mm2 re 0.6/1 (1.2)kV;Building Wire;21-10136-01
+  Cu/PVC/SWA/PVC (NYRGbY) 3 x 10 mm2 re 0.6/1 (1.2)kV;Building Wire;21-10037-01
+  Cu/PVC/SWA/PVC (NYRGbY) 3 x 2.5 mm2 re 0.6/1 (1.2)kV;Building Wire;21-10036-01
+  Cu/PVC/SWA/PVC (NYRGbY) 3 x 2.5 mm2 re 0.6/1 (1.2)kV;Building Wire;21-10210-04
+  Cu/PVC/SWA/PVC (NYRGbY) 3 x 4 mm2 re 0.6/1 (1.2)kV;Building Wire;21-10102-01
+  Cu/PVC/SWA/PVC (NYRGbY) 3 x 6 mm2 re 0.6/1 (1.2)kV;Building Wire;21-10060-01
+  Cu/PVC/SWA/PVC (NYRGbY) 4 x 10 mm2 re 0.6/1 (1.2)kV;Building Wire;21-10109-01
+  Cu/PVC/SWA/PVC (NYRGbY) 4 x 1.5 mm2 re 0.6/1 (1.2)kV;Building Wire;21-10153-01
+  Cu/PVC/SWA/PVC (NYRGbY) 4 x 2.5 mm2 re 0.6/1 (1.2)kV;Building Wire;21-10035-01
+  Cu/PVC/SWA/PVC (NYRGbY) 4 x 2.5 mm2 re 0.6/1 (1.2)kV;Building Wire;21-10035-02
+  Cu/PVC/SWA/PVC (NYRGbY) 4 x 4 mm2 re 0.6/1 (1.2)kV;Building Wire;21-10063-01
+  Cu/PVC/SWA/PVC (NYRGbY) 4 x 4 mm2 re 0.6/1 (1.2)kV;Building Wire;21-10251-03
+  Cu/PVC/SWA/PVC (NYRGbY) 4 x 6 mm2 re 0.6/1 (1.2)kV;Building Wire;21-10077-01
+  Cu/PVC/SWA/PVC (NYRGbY) 4 x 6 mm2 re 0.6/1 (1.2)kV;Building Wire;21-10334-01
+  Cu/PVC/SWA/PVC (NYRGbY) 5 x 2.5 mm2 re 0.6/1 (1.2)kV;Building Wire;21-10252-01
+  Cu/PVC/SWA/PVC (NYRGbY) 5 x 4 mm2 re 0.6/1 (1.2)kV;Building Wire;21-10306-01
+  Cu/PVC/SWA/PVC (NYRGbY) 5 x 6 mm2 re 0.6/1 (1.2)kV;Building Wire;21-10289-01
+  Cu/PVC/SWA/PVC (NYRGbY) 7 x 2.5 mm2 re 0.6/1 (1.2)kV;Building Wire;21-10285-01
+  Cu/PVC/SFA/PVC (NYFGbY) 10 x 1.5 mm2 rm 0.6/1(1.2)kV;Building Wire;21-10195-02
+  Cu/PVC/SFA/PVC (NYFGbY) 12 x 1.5 mm2 rm 0.6/1(1.2)kV;Building Wire;21-10027-01
+  Cu/PVC/SFA/PVC (NYFGbY) 12 x 1.5 mm2 rm 0.6/1(1.2)kV;Building Wire;21-10027-02
+  Cu/PVC/SFA/PVC (NYFGbY) 16 x 1.5 mm2 rm 0.6/1(1.2)kV;Building Wire;21-10129-01
+  Cu/PVC/SFA/PVC (NYFGbY) 20 x 1.5 mm2 rm 0.6/1(1.2)kV;Building Wire;21-10183-01
+  Cu/PVC/SFA/PVC (NYFGbY) 30 x 1.5 mm2 rm 0.6/1(1.2)kV;Building Wire;21-10033-01
+  Cu/PVC/SFA/PVC (NYFGbY) 60 x 1.5 mm2 rm 0.6/1(1.2)kV;Building Wire;21-10917-02
+  Cu/PVC/SFA/PVC (NYFGbY) 6 x 1.5 mm2 rm 0.6/1(1.2)kV;Building Wire;21-10032-01
+  Cu/PVC/SFA/PVC (NYFGbY) 7 x 1.5 mm2 rm 0.6/1(1.2)kV;Building Wire;21-10113-01
+  Cu/PVC/SFA/PVC (NYFGbY) 8 x 1.5 mm2 rm 0.6/1(1.2)kV;Building Wire;21-10225-01
+  Cu/PVC/SFA/PVC (NYFGbY) 4 x 2.5 mm2 re 0.6/1(1.2)kV;Building Wire;21-10221-04
+  Cu/PVC/SFA/PVC (NYFGbY) 4 x 4 mm2 re 0.6/1(1.2)kV;Building Wire;21-10088-02
+  Cu/PVC/SFA/PVC (NYFGbY) 4 x 6 mm2 re 0.6/1(1.2)kV;Building Wire;21-10228-02
+  Cu/PVC/SFA/PVC (NYFGbY) 2 x 10 mm2 re 0.6/1(1.2)kV;Building Wire;21-10552-02
+  Cu/PVC/SFA/PVC (NYFGbY) 4 x 10 mm2 re 0.6/1(1.2)kV;Building Wire;21-10058-01
+  Cu/PVC/SFA/PVC (NYFGbY) 4 x 10 mm2 rm 0.6/1(1.2)kV;Building Wire;21-10090-02
+  Cu/PVC/SFA/PVC (NYFGbY) 4 x 10 mm2 rm 0.6/1(1.2)kV;Building Wire;21-10090-09
+  Cu/PVC/SFA/PVC (NYFGbY) 4 x 10 mm2 rm 0.6/1(1.2)kV;Building Wire;21-10058-01
+  Cu/PVC/SFA/PVC (NYFGbY) 5 x 10 mm2 rm 0.6/1(1.2)kV;Building Wire;21-10653-01
+  Cu/PVC/SFA/PVC (NYFGbY) 6 x 2.5 mm2 rm 0.6/1(1.2)kV;Building Wire;21-10431-01
+  Cu/PVC/SFA/PVC (NYFGbY) 6 x 4 mm2 rm 0.6/1(1.2)kV;Building Wire;21-10434-02
+  Cu/PVC/SFA/PVC (NYFGbY) 7 x 2.5 mm2 rm 0.6/1(1.2)kV;Building Wire;21-10167-01
+  Cu/PVC/SFA/PVC (NYFGbY) 8 x 1.5 mm2 rm 0.6/1(1.2)kV;Building Wire;21-10225-01
+  Cu/PVC-f (NYAF) 0.75 mm2 f450/750 V;Building Wire;11-10048-01
+  Cu/PVC-f (NYAF) 0.75 mm2 f450/750 V;Building Wire;11-10048-02
+  Cu/PVC-f (NYAF) 0.75 mm2 f450/750 V;Building Wire;11-10048-03
+  Cu/PVC-f (NYAF) 0.75 mm2 f450/750 V;Building Wire;11-10048-04
+  Cu/PVC-f (NYAF) 0.75 mm2 f450/750 V;Building Wire;11-10048-05
+  Cu/PVC-f (NYAF) 1.5 mm2 f450/750 V;Building Wire;11-10043-01
+  Cu/PVC-f (NYAF) 1.5 mm2 f450/750 V;Building Wire;11-10043-02
+  Cu/PVC-f (NYAF) 1.5 mm2 f450/750 V;Building Wire;11-10043-03
+  Cu/PVC-f (NYAF) 1.5 mm2 f450/750 V;Building Wire;11-10043-04
+  Cu/PVC-f (NYAF) 1.5 mm2 f450/750 V;Building Wire;11-10043-05
+  Cu/PVC-f (NYAF) 2 mm2 f450/750 V;Building Wire;11-10274-01
+  Cu/PVC-f (NYAF) 2.5 mm2 f450/750 V;Building Wire;11-10044-01
+  Cu/PVC-f (NYAF) 2.5 mm2 f450/750 V;Building Wire;11-10044-02
+  Cu/PVC-f (NYAF) 2.5 mm2 f450/750 V;Building Wire;11-10044-04
+  Cu/PVC-f (NYAF) 4 mm2 f450/750 V;Building Wire;11-10049-01
+  Cu/PVC-f (NYAF) 4 mm2 f450/750 V;Building Wire;11-10049-02
+  Cu/PVC-f (NYAF) 4 mm2 f450/750 V;Building Wire;11-10049-03
+  Cu/PVC-f (NYAF) 6 mm2 f450/750 V;Building Wire;11-10076-01
+  Cu/PVC-f (NYAF) 6 mm2 f450/750 V;Building Wire;11-10076-02
+  Cu/PVC-f (NYAF) 6 mm2 f450/750 V;Building Wire;11-10076-03
+  Cu/PVC-f (NYAF) 10 mm2 f450/750 V;Building Wire;11-10063-01
+  Cu/PVC-f (NYAF) 10 mm2 f450/750 V;Building Wire;11-10063-02
+  NYMHY 2 x 0.75 mm2 f 300/500 V;Building Wire;11-10004-01
+  NYMHY 2 x 0.75 mm2 f 300/500 V;Building Wire;11-10004-04
+  NYMHY 2 x 1.5 mm2 f 300/500 V;Building Wire;11-10006-01
+  NYMHY 2 x 1.5 mm2 f 300/500 V;Building Wire;11-10006-04
+  NYMHY 2 x 2.5 mm2 f 300/500 V;Building Wire;11-10007-01
+  NYMHY 2 x 2.5 mm2 f 300/500 V;Building Wire;11-10007-03
+  NYMHY 2 x 2.5 mm2 f 300/500 V;Building Wire;11-10007-04
+  NYMHY 3 x 0.75 mm2 f 450/750 V;Building Wire;11-10028-03
+  NYMHY 3 x 0.75 mm2 f 450/750 V;Building Wire;11-10028-01
+  NYMHY 3 x 1.5 mm2 f 300/500 V;Building Wire;11-10015-01
+  NYMHY 3 x 1.5 mm2 f 300/500 V;Building Wire;11-10015-02
+  NYMHY 3 x 1.5 mm2 f 300/500 V;Building Wire;11-10015-03
+  NYMHY 3 x 2.5 mm2 f 300/500 V;Building Wire;11-10025-01
+  NYMHY 3 x 2.5 mm2 f 300/500 V;Building Wire;11-10025-04
+  NYMHY 3 x 2.5 mm2 f 300/500 V;Building Wire;11-10025-05
+  NYMHY 4 x 0.75 mm2 f 300/500 V;Building Wire;11-10029-01
+  NYMHY 4 x 1.5 mm2 f 300/500 V;Building Wire;11-10027-01
+  NYMHY 4 x 1.5 mm2 f 300/500 V;Building Wire;11-10027-04
+  NYMHY 4 x 2.5 mm2 f 300/500 V;Building Wire;11-10018-01
+  NYMHY 5 x 2.5 mm2 f 300/500 V;Building Wire;11-10059-01
+  NYMHY 3 x 4 mm2 f 300/500 V;Building Wire;11-10116-02
+  NYYHY 16 x 1.5 mm2 f 450/750 V;Building Wire;11-10067-03
+  NYYHY 2 x 0.75 mm2 f 450/750 V;Building Wire;11-10040-01
+  NYYHY 2 x 0.75 mm2 f 450/750 V;Building Wire;11-10040-02
+  NYYHY 2 x 1.5 mm2 f 450/750 V;Building Wire;11-10017-01
+  NYYHY 2 x 1.5 mm2 f 450/750 V;Building Wire;11-10017-02
+  NYYHY 3 x 1.5 mm2 f 450/750 V;Building Wire;11-10013-04
+  NYYHY 3 x 1.5 mm2 f 450/750 V;Building Wire;11-10013-03
+  NYYHY 3 x 1.5 mm2 f 450/750 V;Building Wire;11-10013-01
+  NYYHY 2 x 2.5 mm2 f 450/750 V;Building Wire;11-10042-01
+  NYYHY 2 x 2.5 mm2 f 450/750 V;Building Wire;11-10042-02
+  NYYHY 2 x 4 mm2 f 450/750 V;Building Wire;11-10053-01
+  NYYHY 2 x 6 mm2 f 450/750 V;Building Wire;11-10085-01
+  NYYHY 2 x 10 mm2 f 450/750 V;Building Wire;11-10180-01
+  NYYHY 3 x 0.75 mm2 f 450/750 V;Building Wire;11-10041-01
+  NYYHY 3 x 0.75 mm2 f 450/750 V;Building Wire;11-10041-03
+  NYYHY 3 x 2.5 mm2 f 450/750 V;Building Wire;11-10030-01
+  NYYHY 3 x 2.5 mm2 f 450/750 V;Building Wire;11-10030-02
+  NYYHY 3 x 4 mm2 f 450/750 V;Building Wire;11-10031-01
+  NYYHY 3 x 6 mm2 f 450/750 V;Building Wire;11-10087-01
+  NYYHY 3 x 10 mm2 f 450/750 V;Building Wire;11-10101-01
+  NYYHY 4 x 0.75 mm2 f 450/750 V;Building Wire;11-10080-01
+  NYYHY 4 x 0.75 mm2 f 450/750 V;Building Wire;11-10080-02
+  NYYHY 4 x 0.75 mm2 f 450/750 V;Building Wire;11-10080-03
+  NYYHY 4 x 1.5 mm2 f 450/750 V;Building Wire;11-10035-01
+  NYYHY 4 x 1.5 mm2 f 450/750 V;Building Wire;11-10035-02
+  NYYHY 4 x 2.5 mm2 f 0.6/1 (1.2) kV;Building Wire;11-10263-01
+  NYYHY 4 x 2.5 mm2 f 450/750 V;Building Wire;11-10016-01
+  NYYHY 4 x 2.5 mm2 f 450/750 V;Building Wire;11-10016-02
+  NYYHY 4 x 4 mm2 f 450/750 V;Building Wire;11-10046-01
+  NYYHY 4 x 6 mm2 f 450/750 V;Building Wire;11-10069-01
+  NYYHY 4 x 10 mm2 f 450/750 V;Building Wire;11-10102-01
+  NYYHY 5 x 1.5 mm2 f 450/750 V;Building Wire;11-10139-01
+  NYYHY 5 x 2.5 mm2 f 450/750 V;Building Wire;11-10055-01
+  NYYHY 5 x 4 mm2 f 450/750 V;Building Wire;11-10140-01
+  NYYHY 8 x 1.5 mm2 f 450/750 V;Building Wire;11-10075-01
+  NYYHY 12 x 0.75 mm2 f 450/750 V;Building Wire;11-10190-01
+  Cu/PVC-f (NYAF) 16 mm2 f 450/750 V;Building Wire;21-10216-01
+  Cu/PVC-f (NYAF) 35 mm2 f 450/750 V;Building Wire;21-10270-01
+  Cu/PVC (NYA) 16 mm2 rm 450/750 V;Low Voltage Single Core;21-10017-01
+  Cu/PVC (NYA) 16 mm2 rm 450/750 V;Low Voltage Single Core;21-10017-15
+  Cu/PVC (NYA) 25 mm2 rm 450/750 V;Low Voltage Single Core;21-10018-01
+  Cu/PVC (NYA) 50 mm2 rm 450/750 V;Low Voltage Single Core;21-10048-01
+  Cu/PVC (NYA) 120 mm2 rm 450/750 V;Low Voltage Single Core;21-10070-01
+  Cu/PVC (NYA) 150 mm2 rm 450/750 V;Low Voltage Single Core;21-10075-01
+  Cu/PVC (NYA) 185 mm2 rm 450/750 V;Low Voltage Single Core;21-10076-01
+  Cu/PVC (NYA) 240 mm2 rm 450/750 V;Low Voltage Single Core;21-10107-01
+  Cu/PVC (NYA) 300 mm2 rm 450/750 V;Low Voltage Single Core;21-10108-01
+  Cu/PVC (NYA) 35 mm2 rm 450/750 V;Low Voltage Single Core;21-10019-01
+  Cu/PVC (NYA) 70 mm2 rm 450/750 V;Low Voltage Single Core;21-10030-06
+  Cu/PVC (NYA) 70 mm2 rm 450/750 V;Low Voltage Single Core;21-10030-01
+  Cu/PVC (NYA) 95 mm2 rm 450/750 V;Low Voltage Single Core;21-10059-01
+  Cu/PVC-f (NYAF) 16 mm2 f 450/750 V;Low Voltage Single Core;21-10216-03
+  Cu/PVC-f (NYAF) 16 mm2 f 450/750 V;Low Voltage Single Core;21-10216-02
+  Cu/PVC-f (NYAF) 25 mm2 f 450/750 V;Low Voltage Single Core;21-10253-01
+  Cu/PVC-f (NYAF) 25 mm2 f 450/750 V;Low Voltage Single Core;21-10253-02
+  Cu/PVC-f (NYAF) 25 mm2 f 450/750 V;Low Voltage Single Core;21-10253-03
+  Cu/PVC-f (NYAF) 35 mm2 f 450/750 V;Low Voltage Single Core;21-10270-01
+  Cu/PVC-f (NYAF) 35 mm2 f 450/750 V;Low Voltage Single Core;21-10270-02
+  Cu/PVC-f (NYAF) 35 mm2 f 450/750 V;Low Voltage Single Core;21-10270-03
+  Cu/PVC-f (NYAF) 150 mm2 f 450/750 V;Low Voltage Single Core;21-10185-02
+  Cu/PVC-f (NYAF) 185 mm2 f 450/750 V;Low Voltage Single Core;21-10254-02
+  Cu/PVC-f (NYAF) 240 mm2 f 450/750 V;Low Voltage Single Core;21-10893-02
+  Cu/PVC-f (NYAF) 240 mm2 f 0.6/1 (1.2) kV;Low Voltage Single Core;21-10112-02
+  Cu/PVC/PVC (NYY) 1 x 16 mm2 rm 0.6/1 (1.2)kV;Low Voltage Single Core;21-10106-01
+  Cu/PVC/PVC (NYY) 1 x 25 mm2 rm 0.6/1 (1.2)kV;Low Voltage Single Core;21-10105-01
+  Cu/PVC/PVC (NYY) 1 x 35 mm2 rm 0.6/1 (1.2)kV;Low Voltage Single Core;21-10020-02
+  Cu/PVC/PVC (NYY) 1 x 50 mm2 rm 0.6/1 (1.2)kV;Low Voltage Single Core;21-10087-02
+  Cu/PVC/PVC (NYY) 1 x 120 mm2 rm 0.6/1 (1.2)kV;Low Voltage Single Core;21-10004-03
+  Cu/PVC/PVC (NYY) 1 x 150 mm2 rm 0.6/1 (1.2)kV;Low Voltage Single Core;21-10005-03
+  Cu/PVC/PVC (NYY) 1 x 185 mm2 rm 0.6/1 (1.2)kV;Low Voltage Single Core;21-10006-02
+  Cu/PVC/PVC (NYY) 1 x 240 mm2 rm 0.6/1 (1.2)kV;Low Voltage Single Core;21-10007-02
+  Cu/PVC/PVC (NYY) 1 x 300 mm2 rm 0.6/1 (1.2)kV;Low Voltage Single Core;21-10031-02
+  Cu/PVC/PVC (NYY) 1 x 300 mm2 rm 0.6/1 (1.2)kV;Low Voltage Single Core;21-10031-03
+  Cu/PVC/PVC (NYY) 1 x 400 mm2 rm 0.6/1 (1.2)kV;Low Voltage Single Core;21-10008-02
+  Cu/PVC/PVC (NYY) 1 x 500 mm2 rm 0.6/1 (1.2)kV;Low Voltage Single Core;21-10065-02
+  Cu/PVC/PVC (NYY) 1 x 70 mm2 rm 0.6/1 (1.2)kV;Low Voltage Single Core;21-10001-03
+  Cu/PVC/PVC (NYY) 1 x 95 mm2 rm 0.6/1 (1.2)kV;Low Voltage Single Core;21-10003-03
+  Cu/PVC/PVC (NYY) 1 x 630 mm2 rm 0.6/1 (1.2)kV;Low Voltage Single Core;21-10198-02
+  Cu/MT/XLPE/PVC (N2XY-FE) 1 x 120 mm2 cm 0.6/1 (1.2)kV;Low Voltage Single Core;21-20036-01
+  Cu/MT/XLPE/PVC (N2XY-FE) 1 x 240 mm2 cm 0.6/1 (1.2)kV;Low Voltage Single Core;21-20314-01
+  Cu/MT/XLPE/PVC (N2XY-FE) 1 x 300 mm2 cm 0.6/1 (1.2)kV;Low Voltage Single Core;21-20038-01
+  Cu/MT/XLPE/PVC (N2XY-FE) 1 x 25 mm2 cm 0.6/1 (1.2)kV;Low Voltage Single Core;21-20034-01
+  Cu/MT/XLPE/PVC (N2XY-FE) 1 x 35 mm2 cm 0.6/1 (1.2)kV;Low Voltage Single Core;21-20198-01
+  Cu/XLPE/PVC (N2XY) 1 x 120 mm2 cm 0.6/1 (1.2)kV;Low Voltage Single Core;21-21035-02
+  Cu/XLPE/PVC (N2XY) 1 x 150 mm2 cm 0.6/1 (1.2)kV;Low Voltage Single Core;21-20178-01
+  Cu/XLPE/PVC (N2XY) 1 x 185 mm2 cm 0.6/1 (1.2)kV;Low Voltage Single Core;21-21037-02
+  Cu/XLPE/PVC (N2XY) 1 x 185 mm2 cm 0.6/1 (1.2)kV;Low Voltage Single Core;21-20078-01
+  Cu/XLPE/PVC (N2XY) 1 x 240 mm2 cm 0.6/1 (1.2)kV;Low Voltage Single Core;21-21038-02
+  Cu/XLPE/PVC (N2XY) 1 x 25 mm2 cm 0.6/1 (1.2)kV;Low Voltage Single Core;21-21030-02
+  Cu/XLPE/PVC (N2XY) 1 x 25 mm2 cm 0.6/1 (1.2)kV;Low Voltage Single Core;21-20184-02
+  Cu/XLPE/PVC (N2XY) 1 x 300 mm2 cm 0.6/1 (1.2)kV;Low Voltage Single Core;21-21039-01
+  Cu/XLPE/PVC (N2XY) 1 x 300 mm2 cm 0.6/1 (1.2)kV;Low Voltage Single Core;21-21039-02
+  Cu/XLPE/PVC (N2XY) 1 x 35 mm2 cm 0.6/1 (1.2)kV;Low Voltage Single Core;21-21031-02
+  Cu/XLPE/PVC (N2XY) 1 x 70 mm2 cm 0.6/1 (1.2)kV;Low Voltage Single Core;21-21033-02
+  Cu/XLPE/PVC (N2XY) 1 x 50 mm2 cm 0.6/1 (1.2)kV;Low Voltage Single Core;21-20190-02
+  Cu/XLPE/PVC (N2XY) 1 x 95 mm2 cm 0.6/1 (1.2)kV;Low Voltage Single Core;21-20177-01
+  AL/XLPE/PVC (NA2XY) 1 x 35 mm2 rm 0.6/1 (1.2) kV;Low Voltage Single Core;22-20103-02
+  AL/XLPE/PVC (NA2XY) 1 x 50 mm2 rm 0.6/1 (1.2) kV;Low Voltage Single Core;22-20019-02
+  AL/XLPE/PVC (NA2XY) 1 x 120 mm2 rm 0.6/1 (1.2) kV;Low Voltage Single Core;22-20022-02
+  AL/XLPE/PVC (NA2XY) 1 x 150 mm2 rm 0.6/1 (1.2) kV;Low Voltage Single Core;22-20120-01
+  AL/XLPE/PVC (NA2XY) 1 x 185 mm2 rm 0.6/1 (1.2) kV;Low Voltage Single Core;22-20121-01
+  AL/XLPE/PVC (NA2XY) 1 x 240 mm2 rm 0.6/1 (1.2) kV;Low Voltage Single Core;22-20006-02
+  AL/XLPE/PVC (NA2XY) 1 x 300 mm2 rm 0.6/1 (1.2) kV;Low Voltage Single Core;22-20023-02
+  AL/XLPE/PVC (NA2XY) 1 x 400 mm2 rm 0.6/1 (1.2) kV;Low Voltage Single Core;22-20007-02
+  AL/XLPE/PVC (NA2XY) 1 x 500 mm2 rm 0.6/1 (1.2) kV;Low Voltage Single Core;22-20024-02
+  AL/XLPE/PVC (NA2XY) 1 x 95 mm2 rm 0.6/1 (1.2) kV;Low Voltage Single Core;22-20021-02
+  AL/XLPE/PVC (NA2XY) 1 x 70 mm2 rm 0.6/1 (1.2) kV;Low Voltage Single Core;22-20020-02
+  CU/PVC/AWA/PVC (NYRaY) 1 X 240 mm2 rm 0.6/1 (1.2) kV;Low Voltage Single Core;21-10267-01
+  CU/PVC/AWA/PVC (NYRaY) 1 X 630 mm2 rm 0.6/1 (1.2) kV;Low Voltage Single Core;21-10768-01
+  Al/PVC/PVC (NAYY) 1 x 400 mm2 rm 0.6/1 (1.2)kV;Low Voltage Single Core;22-10098-01
+  CU/LSZH 1 x 16 mm2 rm 450/750 V;Low Voltage Single Core;21-60002-01
+  CU/LSZH 1 x 25 mm2 rm 450/750 V;Low Voltage Single Core;21-60003-01
+  CU/XLPE/LSZH (N2XH-FE) 1 x 70 mm2 rm 0.6/1 (1.2)kV;Low Voltage Single Core;91-20358-01
+  CU/XLPE/LSZH (N2XH-FE) 1 x 95 mm2 rm 0.6/1 (1.2)kV;Low Voltage Single Core;91-20357-01
+  CU/XLPE/LSZH (N2XH) 1 x 150 mm2 rm 0.6/1 (1.2)kV;Low Voltage Single Core;21-20699-01
+  CU/XLPE/LSZH (N2XH) 1 x 300 mm2 rm 0.6/1 (1.2)kV;Low Voltage Single Core;21-20195-01
+  Cu/PVC/PVC (NYY) 3 x 120 mm2 rm 0.6/1 (1.2)kV;Low Voltage Multi Core;21-10172-01
+  Cu/PVC/PVC (NYY) 3 x 150 mm2 rm 0.6/1 (1.2)kV;Low Voltage Multi Core;21-10323-01
+  Cu/PVC/PVC (NYY) 3 x 185 mm2 rm 0.6/1 (1.2)kV;Low Voltage Multi Core;21-10173-01
+  Cu/PVC/PVC (NYY) 3 x 240 mm2 rm 0.6/1 (1.2)kV;Low Voltage Multi Core;21-10217-01
+  Cu/PVC/PVC (NYY) 3 x 300 mm2 rm 0.6/1 (1.2)kV;Low Voltage Multi Core;21-10246-01
+  Cu/PVC/PVC (NYY) 3 x 16 mm2 rm 0.6/1 (1.2)kV;Low Voltage Multi Core;21-10083-01
+  Cu/PVC/PVC (NYY) 3 x 25 mm2 rm 0.6/1 (1.2)kV;Low Voltage Multi Core;21-10084-01
+  Cu/PVC/PVC (NYY) 3 x 35 mm2 rm 0.6/1 (1.2)kV;Low Voltage Multi Core;21-10085-01
+  Cu/PVC/PVC (NYY) 3 x 50 mm2 rm 0.6/1 (1.2)kV;Low Voltage Multi Core;21-10145-01
+  Cu/PVC/PVC (NYY) 3 x 70 mm2 rm 0.6/1 (1.2)kV;Low Voltage Multi Core;21-10191-06
+  Cu/PVC/PVC (NYY) 3 x 70 mm2 rm 0.6/1 (1.2)kV;Low Voltage Multi Core;21-10191-02
+  Cu/PVC/PVC (NYY) 3 x 95 mm2 rm 0.6/1 (1.2)kV;Low Voltage Multi Core;21-10218-01
+  Cu/PVC/PVC (NYY) 4 x 16 mm2 rm 0.6/1 (1.2)kV;Low Voltage Multi Core;21-10009-01
+  Cu/PVC/PVC (NYY) 4 x 16 mm2 rm 0.6/1 (1.2)kV;Low Voltage Multi Core;21-10009-11
+  Cu/PVC/PVC (NYY) 4 x 25 mm2 rm 0.6/1 (1.2)kV;Low Voltage Multi Core;21-10010-01
+  Cu/PVC/PVC (NYY) 4 x 25 mm2 rm 0.6/1 (1.2)kV;Low Voltage Multi Core;21-10010-05
+  Cu/PVC/PVC (NYY) 4 x 120 mm2 rm 0.6/1 (1.2)kV;Low Voltage Multi Core;21-10071-01
+  Cu/PVC/PVC (NYY) 4 x 120 mm2 rm 0.6/1 (1.2)kV;Low Voltage Multi Core;21-10071-10
+  Cu/PVC/PVC (NYY) 4 x 150 mm2 rm 0.6/1 (1.2)kV;Low Voltage Multi Core;21-10015-01
+  Cu/PVC/PVC (NYY) 4 x 185 mm2 rm 0.6/1 (1.2)kV;Low Voltage Multi Core;21-10125-01
+  Cu/PVC/PVC (NYY) 4 x 240 mm2 rm 0.6/1 (1.2)kV;Low Voltage Multi Core;21-10066-01
+  Cu/PVC/PVC (NYY) 4 x 240 mm2 rm 0.6/1 (1.2)kV;Low Voltage Multi Core;21-10066-08
+  Cu/PVC/PVC (NYY) 4 x 300 mm2 sm 0.6/1 (1.2)kV;Low Voltage Multi Core;21-10124-01
+  Cu/PVC/PVC (NYY) 4 x 35 mm2 rm 0.6/1 (1.2)kV;Low Voltage Multi Core;21-10011-01
+  Cu/PVC/PVC (NYY) 4 x 35 mm2 rm 0.6/1 (1.2)kV;Low Voltage Multi Core;21-10011-11
+  Cu/PVC/PVC (NYY) 4 x 50 mm2 sm 0.6/1 (1.2)kV;Low Voltage Multi Core;21-10012-01
+  Cu/PVC/PVC (NYY) 4 x 70 mm2 sm 0.6/1 (1.2)kV;Low Voltage Multi Core;21-10013-13
+  Cu/PVC/PVC (NYY) 4 x 70 mm2 sm 0.6/1 (1.2)kV;Low Voltage Multi Core;21-10013-01
+  Cu/PVC/PVC (NYY) 4 x 95 mm2 sm 0.6/1 (1.2)kV;Low Voltage Multi Core;21-10014-01
+  Cu/PVC/PVC (NYY) 4 x 95 mm2 sm 0.6/1 (1.2)kV;Low Voltage Multi Core;21-10014-12
+  Cu/PVC/PVC (NYY) 5 x 16 mm2 sm 0.6/1 (1.2)kV;Low Voltage Multi Core;21-10288-01
+  Cu/PVC/PVC (NYY) 5 x 25 mm2 sm 0.6/1 (1.2)kV;Low Voltage Multi Core;21-10498-01
+  Cu/PVC/PVC (NYY) 5 x 35 mm2 sm 0.6/1 (1.2)kV;Low Voltage Multi Core;21-10115-01
+  NYYHY 3 x 16 mm2 f 450/750 V;Low Voltage Multi Core;11-10136-01
+  NYYHY 3 x 25 mm2 f 450/750 V;Low Voltage Multi Core;11-10137-01
+  NYYHY 4 x 25 mm2 f 450/750 V;Low Voltage Multi Core;11-10138-01
+  NYYHY 3 x 35 mm2 f 450/750 V;Low Voltage Multi Core; 21-10419-01
+  NYYHY 4 x 16 mm2 f 450/750 V;Low Voltage Multi Core; 21-10230-01
+  NYYHY 4 x 16 mm2 f 450/750 V;Low Voltage Multi Core; 21-10121-01
+  NYYHY 4 x 35 mm2 f 450/750 V;Low Voltage Multi Core; 21-10122-01
+  NYYHY 4 x 50 mm2 f 450/750 V;Low Voltage Multi Core; 21-10716-01
+  Cu/PVC/SFA/PVC (NYFGbY) 2 x 16 mm2 rm 0.6/1 (1.2) kV;Low Voltage Multi Core;21-10202-02
+  Cu/PVC/SFA/PVC (NYFGbY) 3 x 50 mm2 sm 0.6/1 (1.2) kV;Low Voltage Multi Core;21-10081-02
+  Cu/PVC/SFA/PVC (NYFGbY) 3 x 70 mm2 sm 0.6/1 (1.2) kV;Low Voltage Multi Core;21-10378-01
+  Cu/PVC/SFA/PVC (NYFGbY) 4 x 120 mm2 0.6/1 (1.2) kV;Low Voltage Multi Core;21-10097-02
+  Cu/PVC/SFA/PVC (NYFGbY) 4 x 120 mm2 0.6/1 (1.2) kV;Low Voltage Multi Core;21-10097-04
+  Cu/PVC/SFA/PVC (NYFGbY) 4 x 150 mm2 0.6/1 (1.2) kV;Low Voltage Multi Core;21-10098-01
+  Cu/PVC/SFA/PVC (NYFGbY) 4 x 150 mm2 0.6/1 (1.2) kV;Low Voltage Multi Core;21-10098-02
+  Cu/PVC/SFA/PVC (NYFGbY) 4 x 150 mm2 0.6/1 (1.2) kV;Low Voltage Multi Core;21-10098-03
+  Cu/PVC/SFA/PVC (NYFGbY) 4 x 150 mm2 0.6/1 (1.2) kV;Low Voltage Multi Core;21-10098-09
+  Cu/PVC/SFA/PVC (NYFGbY) 3 x 16 mm2 0.6/1 (1.2) kV;Low Voltage Multi Core;21-10188-01
+  Cu/PVC/SFA/PVC (NYFGbY) 3 x 25 mm2 0.6/1 (1.2) kV;Low Voltage Multi Core;21-10189-01
+  Cu/PVC/SFA/PVC (NYFGbY) 3 x 35 mm2 0.6/1 (1.2) kV;Low Voltage Multi Core;21-10294-01
+  Cu/PVC/SFA/PVC (NYFGbY) 4 x 16 mm2 0.6/1 (1.2) kV;Low Voltage Multi Core;21-10021-01
+  Cu/PVC/SFA/PVC (NYFGbY) 4 x 16 mm2 0.6/1 (1.2) kV;Low Voltage Multi Core;21-10021-02
+  Cu/PVC/SFA/PVC (NYFGbY) 4 x 16 mm2 0.6/1 (1.2) kV;Low Voltage Multi Core;21-10021-12
+  Cu/PVC/SFA/PVC (NYFGbY) 4 x 25 mm2 0.6/1 (1.2) kV;Low Voltage Multi Core;21-10064-01
+  Cu/PVC/SFA/PVC (NYFGbY) 4 x 185 mm2 sm 0.6/1 (1.2) kV;Low Voltage Multi Core;21-10026-01
+  Cu/PVC/SFA/PVC (NYFGbY) 4 x 240 mm2 sm 0.6/1 (1.2) kV;Low Voltage Multi Core;21-10028-01
+  Cu/PVC/SFA/PVC (NYFGbY) 4 x 240 mm2 sm 0.6/1 (1.2) kV;Low Voltage Multi Core;21-10028-02
+  Cu/PVC/SFA/PVC (NYFGbY) 4 x 240 mm2 sm 0.6/1 (1.2) kV;Low Voltage Multi Core;21-10028-04
+  Cu/PVC/SFA/PVC (NYFGbY) 4 x 300 mm2 sm 0.6/1 (1.2) kV;Low Voltage Multi Core;21-10029-01
+  Cu/PVC/SFA/PVC (NYFGbY) 4 x 35 mm2 rm 0.6/1 (1.2) kV;Low Voltage Multi Core;21-10022-01
+  Cu/PVC/SFA/PVC (NYFGbY) 4 x 35 mm2 rm 0.6/1 (1.2) kV;Low Voltage Multi Core;21-10022-03
+  Cu/PVC/SFA/PVC (NYFGbY) 4 x 50 mm2 sm 0.6/1 (1.2) kV;Low Voltage Multi Core;21-10023-01
+  Cu/PVC/SFA/PVC (NYFGbY) 4 x 50 mm2 sm 0.6/1 (1.2) kV;Low Voltage Multi Core;21-10023-02
+  Cu/PVC/SFA/PVC (NYFGbY) 4 x 70 mm2 sm 0.6/1 (1.2) kV;Low Voltage Multi Core;21-10024-01
+  Cu/PVC/SFA/PVC (NYFGbY) 4 x 70 mm2 sm 0.6/1 (1.2) kV;Low Voltage Multi Core;21-10024-02
+  Cu/PVC/SFA/PVC (NYFGbY) 4 x 95 mm2 0.6/1 (1.2) kV;Low Voltage Multi Core;21-10025-01
+  Cu/PVC/SFA/PVC (NYFGbY) 4 x 95 mm2 0.6/1 (1.2) kV;Low Voltage Multi Core;21-10025-02
+  Cu/PVC/SFA/PVC (NYFGbY) 4 x 95 mm2 0.6/1 (1.2) kV;Low Voltage Multi Core;21-10025-06
+  Al/PVC/SFA/PVC (NAYFGbY) 4 x 10 mm2 rm 0.6/1 (1.2) kV;Low Voltage Multi Core;22-10054-01
+  Al/PVC/SFA/PVC (NAYFGbY) 4 x 16 mm2 rm 0.6/1 (1.2) kV;Low Voltage Multi Core;22-10049-01
+  Al/PVC/SFA/PVC (NAYFGbY) 4 x 25 mm2 rm 0.6/1 (1.2) kV;Low Voltage Multi Core;22-10050-02
+  Al/PVC/SFA/PVC (NAYFGbY) 4 x 35 mm2 rm 0.6/1 (1.2) kV;Low Voltage Multi Core;22-10061-02
+  Al/PVC/SFA/PVC (NAYFGbY) 4 x 50 mm2 rm 0.6/1 (1.2) kV;Low Voltage Multi Core;22-10112-01
+  Al/PVC/SFA/PVC (NAYFGbY) 4 x 70 mm2 rm 0.6/1 (1.2) kV;Low Voltage Multi Core;22-10014-01
+  Al/PVC/SFA/PVC (NAYFGbY) 4 x 95 mm2 rm 0.6/1 (1.2) kV;Low Voltage Multi Core;22-10015-01
+  Al/PVC/SFA/PVC (NAYFGbY) 4 x 70 mm2 rm 0.6/1 (1.2) kV;Low Voltage Multi Core;22-10013-01
+  Al/PVC/SFA/PVC (NAYFGbY) 4 x 120 mm2 rm 0.6/1 (1.2) kV;Low Voltage Multi Core;22-10089-01
+  Al/XLPE/LSZH (NA2XH) 3 x 120 + 70 mm2 sm/rm 0.6/1 (1.2) kV;Low Voltage Multi Core; 22-20237-01
+  Al/XLPE/PVC (NA2XY) 3 x 150 + 95 mm2 sm/rm 0.6/1 (1.2) kV;Low Voltage Multi Core; 22-20238-01
+  Cu/XLPE/LSZH (N2XH) 4 x 16 mm2 rm 0.6/1(1.2)kV;Low Voltage Multi Core; 21-20100-01
+  Cu/XLPE/LSZH (N2XH) 4 x 35 mm2 rm 0.6/1(1.2)kV;Low Voltage Multi Core;21-20659-01
+  Cu/XLPE/LSZH (N2XH) 4 x 300 mm2 rm 0.6/1(1.2)kV;Low Voltage Multi Core;21-20965-02
+  Cu/MT/XLPE/LSZH (N2XH-FE) 4 x 16 mm2 rm 0.6/1(1.2)kV;Low Voltage Multi Core;91-20234-02
+  Cu/MT/XLPE/LSZH (N2XH-FE) 4 x 25 mm2 rm 0.6/1(1.2)kV;Low Voltage Multi Core;91-20233-02
+  Cu/XLPE/DSTA/PVC (N2XBY) 2 x 120 mm2 rm 0.6/1 (1.2) kV;Low Voltage Multi Core;21-21078-01
+  Cu/XLPE/DSTA/PVC (N2XBY) 2 x 95 mm2 rm 0.6/1 (1.2) kV;Low Voltage Multi Core;21-21230-02
+  Cu/XLPE/PVC (N2XY) 4 x 35 mm2 cm 0.6/1 (1.2)kV;Low Voltage Multi Core;21-20068-11
+  Cu/XLPE/PVC (N2XY) 3 x 150 mm2 cm 0.6/1 (1.2)kV;Low Voltage Multi Core;21-20470-02
+  Cu/XLPE/PVC (N2XY) 3 x 300 + 150 mm2 sm/rm 0.6/1 (1.2) kV;Low Voltage Multi Core;21-21483-02
+  Cu/XLPE/PVC (N2XY) 4 x 25 mm2 cm 0.6/1 (1.2)kV;Low Voltage Multi Core;21-20145-13
+  Cu/XLPE/CTS/PVC (N2XSY) 4 X 25mm2 rm 0.6/1 (1.2)kV;Low Voltage Multi Core;21-20277-02
+  Cu/XLPE/SWA/PVC (N2XRGBY) 5 X 16  mm2 rm 0.6/1 (1.2) kv;Low Voltage Multi Core;  21-20044-02
+  Cu/XLPE/SWA/PVC (N2XRGBY) 3 X 35 + 25 mm2 rm 0.6/1 (1.2) kv;Low Voltage Multi Core;  21-21347-03
+  Al/XLPE/SFA/PVC (NA2XRY) 3 x 300 + 150 mm2 sm 0.6/1 (1.2) kV;Low Voltage Multi Core;  22-20255-02
+  Al/XLPE/SWA/PVC (NA2XFGbY) 4 x 95 mm2 sm 0.6/1 (1.2) kV;Low Voltage Multi Core;  22-20014-01
+  Cu/XLPE/LS/SFA/PVC (N2XKFGbY) 4 x 35 mm2 rm 0.6/1 (1.2) kV;Low Voltage Multi Core; 21-21340-01
+  Cu/PVC/LS/SFA/PVC (N2XKFGbY) 4 x 35 mm2 rm 0.6/1 (1.2) kV;Low Voltage Multi Core; 21-10806-02
+  Cu/XLPE/SWA/PVC (N2XRY) 2 x 16 mm2 rm 0.6/1 (1.2) kV;Low Voltage Multi Core; 21-20055-01
+  Cu/XLPE/SWA/PVC (N2XRY) 4 x 16 mm2 rm 0.6/1 (1.2) kV;Low Voltage Multi Core;21-20091-01
+  Cu/XLPE/CWS/PVC (N2XCY) 2 x 16/2.5 mm2 rm 0.6/1(1.2)kV;Low Voltage Multi Core;21-20108-02
+YSLY-JZ 4 1.5mm2 f 300/500 V;Instrument & Control Cable;11-10247-01
+  Cu/PVC/CWS/PVC (NYCY) 2 x 4/4 mm2 rm 0.6/1(1.2) kV;Instrument & Control Cable;21-10307-01
+  Cu/PVC/CWS/PVC (NYCY) 2 x 4/4 mm2 rm 0.6/1(1.2) kV;Instrument & Control Cable;21-10307-02
+  Cu/PVC/CWS/PVC (NYCY) 2 x 2.5/2.5 mm2 rm 0.6/1 (1.2) kV;Instrument & Control Cable;21-10052-02
+  Cu/PVC/CWS/PVC (NYCY) 2 x 2.5/2.5 mm2 rm 0.6/1 (1.2) kV;Instrument & Control Cable;21-10052-03
+  Cu/PVC/CWS/PVC (NYCY) 3 x 1.5/1.5 mm2 rm 0.6/1(1.2) kV;Instrument & Control Cable;21-10537-01
+  Cu/PVC/CWS/PVC (NYCY) 3 x 2.5/2.5 mm2 rm 0.6/1(1.2) kV;Instrument & Control Cable;21-10658-01
+  Cu/PVC/CWS/PVC (NYCY) 4 x 1.5/1.5 mm2 rm 0.6/1(1.2) kV;Instrument & Control Cable;21-10169-02
+  Cu/PVC/CWS/PVC (NYCY) 4 x 2.5/2.5 mm2 rm 0.6/1(1.2) kV;Instrument & Control Cable;21-10170-01
+  Cu/PVC/CWS/PVC (NYCY) 4 x 2.5/2.5 mm2 rm 0.6/1(1.2) kV;Instrument & Control Cable;21-10170-02
+  Cu/PVC/CWS/PVC (NYCY) 4 x 4/4 mm2 rm 0.6/1(1.2) kV;Instrument & Control Cable;21-10192-02
+  Cu/PVC/CWS/PVC (NYCY) 4 x 4/4 mm2 rm 0.6/1(1.2) kV;Instrument & Control Cable;21-10192-03
+  Cu/PVC/CWS/PVC (NYCY) 10 x 1.5/2.5 mm2 rm 0.6/1(1.2) kV;Instrument & Control Cable;21-10725-02
+  Cu/PVC/CWS/PVC (NYCY) 4 x 4/4 mm2 rm 0.6/1(1.2) kV;Instrument & Control Cable;21-10192-02
+  Cu/PVC/CWS/PVC (NYCY) 4 x 6/6 mm2 rm 0.6/1(1.2) kV;Instrument & Control Cable;21-10053-02
+  Cu/PVC/CWS/PVC (NYCY) 7 x 1.5/2.5 mm2 rm 0.6/1(1.2) kV;Instrument & Control Cable;21-10055-01
+  Cu/PVC/CWS/PVC (NYCY) 14 x 2.5/6 mm2 rm 0.6/1(1.2) kV;Instrument & Control Cable;21-10171-01
+  Cu/PVC/CWS/PVC (NYCY) 19 x 1.5/4 mm2 rm 0.6/1(1.2) kV;Instrument & Control Cable;21-10868-01
+  Cu/PVC/CWS/PVC (NYCY) 19 x 2.5/6 mm2 rm 0.6/1(1.2) kV;Instrument & Control Cable;21-10355-01
+  Cu/PVC/CWS/PVC (NYCY) 20 x 1.5/4 mm2 rm 0.6/1(1.2) kV;Instrument & Control Cable;21-10901-01
+  Cu/PVC/DSTA/PVC (NYBY) 4 x 0.75 mm2 re 0.6/1(1.2) kV;Instrument & Control Cable;21-10293-01
+  Cu/PVC/DSTA/PVC (NYBY) 4 x 1.5 mm2 re 0.6/1(1.2) kV;Instrument & Control Cable;21-10141-01
+  Cu/PVC/DSTA/PVC (NYBY) 4 x 2.5 mm2 re 0.6/1(1.2) kV;Instrument & Control Cable;21-10049-02
+  Cu/PVC/DSTA/PVC (NYBY) 4 x 2.5 mm2 re 0.6/1(1.2) kV;Instrument & Control Cable;21-10439-01
+  Cu/PVC/DSTA/PVC (NYBY) 12 x 1.5 mm2 re 0.6/1(1.2) kV;Instrument & Control Cable;21-10864-01
+  NYBY 4 x 2.5 mm2 re 0.6/1(1.2) kV;Instrument & Control Cable;21-10049-01
+  NYBY 12 x 1.5 mm2 re 0.6/1(1.2) kV;Instrument & Control Cable;21-10139-01
+  Cu/PVC/DSTA/PVC (NYBY) 16 x 1.5 mm2 re 0.6/1(1.2) kV;Instrument & Control Cable;21-10787-01
+  Cu/PVC/DSTA/PVC (NYBY) 16 x 1.5 mm2 re 0.6/1(1.2) kV;Instrument & Control Cable;21-10787-02
+  Cu/PVC/DSTA/PVC (NYBY) 16 x 1.5 mm2 re 0.6/1(1.2) kV;Instrument & Control Cable;21-10865-01
+  N2X2YB2Y 3 x 16 mm2 rm 0.6/1 (1.2) kV;Instrument & Control Cable;21-21423-01
+  N2X2YB2Y 4 x 4 mm2 rm 0.6/1 (1.2) kV;Instrument & Control Cable;21-20017-02
+  N2X2YB2Y 4 x 6 mm2 rm 0.6/1 (1.2) kV;Instrument & Control Cable;21-20018-02
+  N2X2YB2Y 4 x 10 mm2 rm 0.6/1 (1.2) kV;Instrument & Control Cable;21-21071-01
+  N2X2YB2Y 4 x 16 mm2 rm 0.6/1 (1.2) kV;Instrument & Control Cable;21-21072-01
+  N2X2YB2Y 6 x 1.5 mm2 rm 0.6/1 (1.2) kV;Instrument & Control Cable;21-20133-01
+  N2X2YB2Y 8 x 1.5 mm2 rm 0.6/1 (1.2) kV;Instrument & Control Cable;21-20019-01
+  N2X2YB2Y 12 x 1.5 mm2 rm 0.6/1 (1.2) kV;Instrument & Control Cable;21-20020-01
+  N2X2YB2Y 16 x 1.5 mm2 rm 0.6/1 (1.2) kV;Instrument & Control Cable;21-20021-01
+  N2X2YB2Y 16 x 1.5 mm2 rm 0.6/1 (1.2) kV;Instrument & Control Cable;21-20021-02
+  N2X2YB2Y 14 x 2.5 mm2 rm 0.6/1 (1.2) kV;Instrument & Control Cable;21-21424-01
+  Cu/XLPE/PVC (N2XY) 2 x 2.5 + 2.5 mm2 re 0.6/1(1.2) kV;Instrument & Control Cable;21-20003-09
+  Cu/XLPE/PVC (N2XY) 2 x 6 mm2 re 0.6/1(1.2) kV;Instrument & Control Cable;21-21458-01
+  Cu/XLPE/PVC (N2XY) 3 x 2.5 mm2 re 0.6/1(1.2) kV;Instrument & Control Cable;21-20758-03
+  Cu/XLPE/PVC (N2XY) 4 x 1.5 mm2 re 0.6/1(1.2) kV;Instrument & Control Cable;21-20481-03
+  Cu/XLPE/PVC (N2XY) 4 x 10 mm2 re 0.6/1(1.2) kV;Instrument & Control Cable;21-20136-01
+  Cu/XLPE/PVC (N2XY) 4 x 2.5 mm2 re 0.6/1(1.2) kV;Instrument & Control Cable;21-20030-02
+  Cu/XLPE/PVC (N2XY) 4 x 6 mm2 re 0.6/1(1.2) kV;Instrument & Control Cable;21-21459-01
+  Cu/XLPE/PVC (N2XY) 5 x 10 mm2 re 0.6/1(1.2) kV;Instrument & Control Cable;21-20444-05
+  Cu/XLPE/PVC (N2XY) 5 x 10 mm2 re 0.6/1(1.2) kV;Instrument & Control Cable;21-21735-01
+  Cu/XLPE/LS/SWA/PVC (N2XRGbY) 2 x 2.5 + 2.5 mm2 rm 0.6/1(1.2) kV ;Instrument & Control Cable;  21-20395-09
+  Cu/XLPE/LS/SWA/PVC (N2XRGbY) 4 x 2.5 mm2 rm 0.6/1(1.2) kV ;Instrument & Control Cable;  21-20353-01
+  Cu/XLPE/LS/SWA/PVC (N2XRY) 2 x 10 mm2 rm 0.6/1(1.2) kV ;Instrument & Control Cable;  21-21480-01
+  Cu/XLPE/LS/SWA/PVC (N2XRY) 3 x 4 mm2 rm 0.6/1(1.2) kV ;Instrument & Control Cable;  21-20076-03
+  Cu/XLPE/LS/SWA/PVC (N2XRY) 3 x 6 mm2 rm 0.6/1(1.2) kV ;Instrument & Control Cable;  21-21480-01
+  Cu/XLPE/SWA/PVC (N2XRGbY) 3 x 6 mm2 rm 0.6/1 (1.2)kV;Instrument & Control Cable;  21-20052-05
+  Cu/XLPE/SWA/PVC (N2XRGbY) 4 x 4 mm2 rm 0.6/1 (1.2)kV;Instrument & Control Cable;  21-20072-09
+  Cu/XLPE/SWA/PVC (N2XRGbY) 4 x 6 mm2 rm 0.6/1 (1.2)kV;Instrument & Control Cable;  21-20073-12
+  Cu/XLPE/SWA/PVC (N2XRGbY) 4 x 10 mm2 rm 0.6/1 (1.2)kV;Instrument & Control Cable;  21-20046-13
+  Cu/XLPE/SWA/PVC (N2XRGbY) 4 x 1.5 mm2 rm 0.6/1 (1.2)kV;Instrument & Control Cable;  21-20660-05
+  Cu/PVC/LS/SFA/PVC (NYKFGbY) 3 x 4 mm2 rm 0.6/1 (1.2)kV;Instrument & Control Cable;  21-10638-01
+  Cu/PVC/LS/SFA/PVC (NYKFGbY) 4 x 4 mm2 rm 0.6/1 (1.2)kV;Instrument & Control Cable;  21-10889-02
+  Cu/PVC/LS/SFA/PVC (NYKFGbY) 7 x 2.5 mm2 rm 0.6/1 (1.2)kV;Instrument & Control Cable;  21-10639-01
+  Cu/XLPE/PVC (N2XY) 1 x 1.5 mm2 rm 0.6/1(1.2) kV;Instrument & Control Cable;21-21212-01
+  Cu/XLPE/PVC (N2XY) 1 x 10 mm2 rm 0.6/1(1.2) kV;Instrument & Control Cable;21-20482-01
+  Cu/XLPE/PVC (N2XY) 1 x 4 mm2 rm 0.6/1(1.2) kV;Instrument & Control Cable;21-21456-01
+  Cu/MT/XLPE/PVC (N2XY-FE) 1 x 10 mm2 rm 0.6/1(1.2) kV;Instrument & Control Cable;21-20032-01
+  Cu/MT/XLPE/PVC (N2XY-FE) 4 x 10 mm2 rm 0.6/1(1.2) kV;Instrument & Control Cable;91-20035-01
+  DC SOLAR CABLE (H1Z2Z2-K) 6 mm2 f 1500 V;Instrument & Control Cable;A3-20004-01
+  Cu/MT/XLPE/OS/LSZH 1 x 2 x 18 AWG rm 500 V;Instrument & Control Cable;91-20409-01
+ Cu/PVC/OS/PVC 3 x 1.5 mm2 rm 0.6/1 (1.2) kV;Instrument & Control Cable;51-10337-01
+ Cu/PVC/OS/SWA/LSZH 3 x 2.5 mm2 ;Instrument & Control Cable;51-10336-01
+ Cu/PVC/IS/OS/SWA/PVC 20 x 2 x 1.5 mm2 rm 500 V;Instrument & Control Cable;51-10331-02
+ Cu/PVC/OS/SWA/PVC 1 x 2 x 1.5 mm2 rm 500 V;Instrument & Control Cable;51-10009-08
+  Cu/XLPE/LSZH (N2XH)  1 x 2.5 mm2 rm 0.6/1(1.2)kV;Instrument & Control Cable;21-20959-02
+  Cu/XLPE/LSZH (N2XH) 1 x 4 mm2 rm 0.6/1(1.2)kV;Instrument & Control Cable;21-20368-01
+  Cu/XLPE/LSZH (N2XH) 2 x 2.5 mm2 rm 0.6/1(1.2)kV;Instrument & Control Cable;21-20633-01
+  Cu/XLPE/LSZH (N2XH)  2 x 4 mm2 rm 0.6/1(1.2)kV;Instrument & Control Cable;21-20149-01
+  Cu/XLPE/LSZH (N2XH) 2 x 6 mm2 rm 0.6/1(1.2)kV;Instrument & Control Cable;21-21369-01
+  Cu/XLPE/LSZH (N2XH) 3 x 2.5 mm2 rm 0.6/1(1.2)kV;Instrument & Control Cable;21-20114-01
+  Cu/XLPE/LSZH (N2XH) 3 x 2.5 mm2 rm 0.6/1(1.2)kV;Instrument & Control Cable;21-20114-05
+  Cu/XLPE/LSZH (N2XH)  3 x 4 mm2 rm 0.6/1(1.2)kV;Instrument & Control Cable;21-20310-01
+  Cu/XLPE/LSZH (N2XH) 3 x 6 mm2 rm 0.6/1(1.2)kV;Instrument & Control Cable;21-20957-01
+  Cu/XLPE/LSZH (N2XH) 4 x 2.5 mm2 rm 0.6/1(1.2)kV;Instrument & Control Cable;21-20554-03
+  Cu/XLPE/LSZH (N2XH) 5 x 2.5 mm2 rm 0.6/1(1.2)kV;Instrument & Control Cable;21-21100-01
+  Cu/MT/XLPE/LSZH (N2XH-FE) 2 x 1.5 mm2 rm 0.6/1 (1.2) kV;Instrument & Control Cable;91-20062-02
+  Cu/MT/XLPE/LSZH (N2XH-FE) 3 x 2.5 mm2 rm 0.6/1 (1.2) kV;Instrument & Control Cable;91-20061-02
+  Cu/MT/XLPE/LSZH (N2XH-FE) 4 x 4 mm2 rm 0.6/1 (1.2) kV;Instrument & Control Cable;91-20235-02
+  Cu/MT/XLPE/LSZH (N2XH-FE) 4 x 10 mm2 rm 0.6/1 (1.2) kV;Instrument & Control Cable;91-20029-01
+  Cu/MT/XLPE/IS/OS/LSZH/SWA/LSZH 10 x 2 x 1.5 mm2 rm 600 V;Instrument & Control Cable; 91-20466-01
+  Cu/MT/XLPE/IS/OS/LSZH/SWA/LSZH 20 x 3 x 1.5 mm2 rm 600 V;Instrument & Control Cable; 91-20444-01
+  Cu/MT/XLPE/OS/LSZH/SWA/LSZH 1 x 2 x 1.5 mm2 rm 600 V;Instrument & Control Cable; 91-20020-03
+  Cu/MT/XLPE/OS/LSZH/SWA/LSZH 1 x 2 x 2.5 mm2 rm 600 V;Instrument & Control Cable; 91-20021-02
+  Cu/MT/XLPE/OS/LSZH/SWA/LSZH 1 x 3 x 1.5 mm2 rm 600 V;Instrument & Control Cable; 91-20040-02
+  Cu/MT/XLPE/OS/LSZH/SWA/LSZH 10 x 2 x 2.5 mm2 rm 600 V;Instrument & Control Cable; 91-20442-01
+  Cu/MT/XLPE/OS/LSZH/SWA/LSZH 2 x 2 x 2.5 mm2 rm 600 V;Instrument & Control Cable; 91-20076-02
+  Cu/MT/XLPE/OS/LSZH/SWA/LSZH 20 x 2 x 2.5 mm2 rm 600 V;Instrument & Control Cable; 91-20443-01
+  Cu/XLPE/IS/OS/SWA/PVC 2 x 2 x 1.5 mm2 rm 500 V;Instrument & Control Cable; 51-20023-05
+  Cu/XLPE/IS/OS/SWA/PVC 2 x 2 x 1.5 mm2 rm 500 V;Instrument & Control Cable; 51-20023-03
+  Cu/XLPE/OS/SWA/PVC 1 x 2 x 1.5 mm2 rm 500 V;Instrument & Control Cable; 51-20022-02
+  Cu/XLPE/OS/SWA/PVC 16 x 2 x 1.5 mm2 rm 500 V;Instrument & Control Cable; 51-20028-01
+  Cu/XLPE/OS/PVC 2 x 2 x 1.5 mm2 rm 500 V;Instrument & Control Cable; 51-20189-03
+  Cu/XLPE/OS/PVC 2 x 2 x 2.5 mm2 rm 500 V;Instrument & Control Cable; 51-20115-03
+  Cu/XLPE/OS/PVC 20 x 2 x 1.5 mm2 rm 500 V;Instrument & Control Cable; 51-20032-01
+  Cu/XLPE/OS/PVC 24 x 2 x 1.5 mm2 rm 500 V;Instrument & Control Cable; 51-20030-01
+  CU/XLPE/SWA/LSZH 7 x 1.5 mm2 rm 0.6/1(1.2) kV;Instrument & Control Cable;21-21519-01
+  Cu/XLPE/CTS/PVC (N2XSY) 1 x 35 mm2 cm 12/20 (24) kV;Medium Voltage Single & Multi Core  ;31-20035-02
+  Cu/XLPE/CTS/PVC (N2XSY) 1 x 50 mm2 cm 12/20 (24) kV;Medium Voltage Single & Multi Core  ;31-20042-01
+  Cu/XLPE/CTS/PVC (N2XSY) 1 x 70 mm2 cm 12/20 (24) kV;Medium Voltage Single & Multi Core  ;31-20043-03
+  Cu/XLPE/CTS/PVC (N2XSY) 1 x 95 mm2 cm 12/20 (24) kV;Medium Voltage Single & Multi Core  ;31-20036-02
+  Cu/XLPE/CTS/PVC (N2XSY) 1 x 120 mm2 cm 12/20 (24) kV;Medium Voltage Single & Multi Core  ;31-20112-01
+  Cu/XLPE/CTS/PVC (N2XSY) 1 x 120 mm2 cm 12/20 (24) kV;Medium Voltage Single & Multi Core  ;31-20037-02
+  Cu/XLPE/CTS/PVC (N2XSY) 1 x 150 mm2 cm 12/20 (24) kV;Medium Voltage Single & Multi Core  ;31-20044-01
+  Cu/XLPE/CTS/PVC (N2XSY) 1 x 185 mm2 cm 12/20 (24) kV;Medium Voltage Single & Multi Core  ;31-20004-01
+  Cu/XLPE/CTS/PVC (N2XSY) 1 x 240 mm2 cm 12/20 (24) kV;Medium Voltage Single & Multi Core  ;31-20172-01
+  Cu/XLPE/CTS/PVC (N2XSY) 1 x 240 mm2 cm 12/20 (24) kV;Medium Voltage Single & Multi Core  ;31-20028-03
+  Cu/XLPE/CTS/PVC (N2XSY) 1 x 300 mm2 cm 12/20 (24) kV;Medium Voltage Single & Multi Core  ;31-20005-01
+   NA2XSY 1 x 630 mm2 cm 12/20 (24) kV;Medium Voltage Single & Multi Core  ;32-20121-01
+   Al/XLPE/CTS/PVC (NA2XSY) 1 x 300 mm2 cm 12/20 (24) kV;Medium Voltage Single & Multi Core  ;32-20001-01
+  Cu/XLPE/CTS/DSTA/PVC (N2XSEBY) 1 x 35 mm2 cm 12/20 (24) kV;Medium Voltage Single & Multi Core  ; 31-20058-01
+  N2XSEBY 3 x 35 mm2 cm  12/20 kV 12/20 (24) kV;Medium Voltage Single & Multi Core  ; 31-20047-02
+  N2XSEBY 3 x 50 mm2 cm  12/20 kV 12/20 (24) kV;Medium Voltage Single & Multi Core  ; 31-20058-01
+  N2XSEBY 3 x 70 mm2 cm  12/20 (24) kV;Medium Voltage Single & Multi Core  ; 31-20046-01
+  N2XSEBY 3 x 95 mm2 cm  12/20 kV 12/20 (24) kV;Medium Voltage Single & Multi Core  ; 31-20010-01
+  N2XSEBY 3 x 120 mm2 cm  12/20 kV 12/20 (24) kV;Medium Voltage Single & Multi Core  ; 31-20038-01
+  N2XSEBY 3 x 150 mm2 cm  12/20 kV 12/20 (24) kV;Medium Voltage Single & Multi Core  ; 31-20056-02
+  N2XSEBY 3 x 185 mm2 cm  12/20 kV 12/20 (24) kV;Medium Voltage Single & Multi Core  ; 31-20057-02
+  N2XSEBY 3 x 300 mm2 cm  12/20 (24) kV;Medium Voltage Single & Multi Core  ; 31-20024-01
+  Cu/XLPE/CTS/DSTA/PVC (N2XSEBY) 3 x 240 mm2 cm 12/20 (24) kV;Medium Voltage Single & Multi Core  ; 31-20048-02
+  Cu/XLPE/CTS/DSTA/PVC (N2XSEBY) 3 x 240 mm2 cm 12/20 (24) kV;Medium Voltage Single & Multi Core  ; 31-20048-03
+  N2XSEBH 3 x 240 mm2 cm  12/20  (24) kV;Medium Voltage Single & Multi Core  ; 31-20476-01
+  N2XSEFGBY 3 x 35 mm2 cm 6/10 (12) kV;Medium Voltage Single & Multi Core  ; 31-20133-01
+  N2XSEFGBY 3 x 95 mm2 cm 8.7/15 (17.5) kV;Medium Voltage Single & Multi Core  ; 31-20105-01
+  N2XSEFGBY 3 x 120 mm2 cm 12/20 (24) kV;Medium Voltage Single & Multi Core  ; 31-20014-03
+  N2XSEFGBY 3 x 120 mm2 cm 6/10 (12) kV;Medium Voltage Single & Multi Core  ; 31-20135-01
+  N2XSERGBY 3 x 150 mm2 cm 12/20 (24) kV;Medium Voltage Single & Multi Core  ; 31-20154-02
+  Cu/XLPE/CTS/SFA/PVC (N2XSEFGBY 3 x 95 mm2 cm 12/20 (24) kV;Medium Voltage Single & Multi Core  ; 31-20053-02
+  N2XSH 1 x 240 mm2 cm 12/20 (24) kV;Medium Voltage Single & Multi Core  ; 31-20381-02
+  Cu/XLPE/CTS/SFA/PVC (N2XSEFGbY) 3 x 25 mm2 cm 6/10 (12) kV;Medium Voltage Single & Multi Core  ; 31-20134-01
+  Cu/XLPE/CTS/SFA/PVC (N2XSEFGbY) 3 x 35 mm2 cm 6/10 (12) kV;Medium Voltage Single & Multi Core  ; 31-20133-01
+  Cu/XLPE/CTS/SFA/PVC (N2XSEFGbY) 3 x 120 mm2 cm 6/10 (12) kV;Medium Voltage Single & Multi Core  ; 31-20135-01
+  Cu/XLPE/CTS/SFA/PVC (N2XSEFGbY) 3 x 240 mm2 cm 8.7/15 (17.5) kV;Medium Voltage Single & Multi Core  ; 31-20277-01
+  N2XSEFGbY  3 x 240 mm2 cm 12/20 (24)kV;Medium Voltage Single & Multi Core  ;31-20043-03
+  Al/XLPE/CTS/PVC (NA2XSY) 1 x 95 mm2 cm 12/20 (24) kV;Medium Voltage Single & Multi Core  ;   32-20035-01
+  NA2XSEBY  12/20 kV 3 x 300 mm2 cm 12/20 (24) kV;Medium Voltage Single & Multi Core  ; 32-20055-02
+  NA2XSEFGbY 3 x 70 mm2 cm 12/20 (24) kV;Medium Voltage Single & Multi Core  ; 32-20014-01
+  NA2XSEFGbY  12/20 kV;Medium Voltage Single & Multi Core  ;   3  x 120
+  NA2XSEYBY  12/20 kV 3  x 95 mm2 cm/25 12/20 kV;Medium Voltage Single & Multi Core  ;  32-20167-01
+  NA2XSEYBY  12/20 kV 3  x 240 mm2 cm/25 12/20 kV;Medium Voltage Single & Multi Core  ;  32-20005-03
+  NA2XSEYBY  12/20 kV 3  x 240 mm2 cm/25 12/20 kV;Medium Voltage Single & Multi Core  ;  32-20005-01
+  NA2XSEYBY 3 x 300 mm2 cm/25 12/20 (24) kV;Medium Voltage Single & Multi Core  ;  32-20006-01
+  NA2XSEYBY 3 x 300 mm2 cm/25 12/20 (24) kV;Medium Voltage Single & Multi Core  ;  32-20006-06
+  NFA2X 2 x 10 mm2 rm 0.6/1 (1.2)kV;Twisted Cable;  72-20001-01
+  NFA2X 2 x 16 mm2 rm 0.6/1 (1.2)kV;Twisted Cable;  72-20002-01
+  NFA2X 4 x 10 mm2 rm 0.6/1 (1.2)kV;Twisted Cable;  72-20003-01
+  NFA2X 4 x 25 mm2 rm 0.6/1 (1.2)kV;Twisted Cable;   72-20019-01
+  NFA2X 4 x 35 mm2 rm 0.6/1 (1.2)kV;Twisted Cable;   72-20012-01
+  NFA2X 4 x 16 mm2 rm 0.6/1 (1.2)kV;Twisted Cable;  72-20004-01
+  NFA2X-T 3 x 50 +35;Twisted Cable;  72-20015-01
+  NFA2X-T 3 x 95 +95;Twisted Cable;  72-20011-01
+  NFA2X-T 3 x 95 + 70;Twisted Cable;  72-20017-01
+  AAAC 35 mm2;AL/ACSR;42-00045-01
+  AAAC 70 mm2;AL/ACSR;42-20008-01
+  AAAC 150 mm2;AL/ACSR;42-20009-01
+  AAAC-S 50 mm2;AL/ACSR;42-20008-01
+  AAAC-S 70 mm2;AL/ACSR;42-20002-01
+  AAAC-S 95 mm2 ;AL/ACSR;42-20013-01
+  AAAC-S 150 mm2;AL/ACSR;42-20001-01
+  AAAC-S 150 mm2 (19 wire);AL/ACSR;42-20018-01
+  AAAC-S 240 mm2;AL/ACSR;42-20003-01
+  THAL;AL/ACSR;     980
+  ACCC/TW  COPENHAGEN 220 mm2 tw;AL/ACSR;42-00019-01
+  ACCC/TW  LISBON 310 mm2 tw;AL/ACSR;42-00001-02
+  ACCC/TW   AMSTERDAM 360 mm2 tw;AL/ACSR;42-00004-01
+  ACCC/TW  BRUSSELS 420 mm2 tw ;AL/ACSR;42-00016-01
+  GSW 35 mm2 rm;AL/ACSR;45-00005-01
+  AS Wire 70 mm2 rm ;AL/ACSR;45-00013-01
+"  OPGW-24G652-2S-91 [53.6;77.1} ";AL/ACSR;45-00014-01
+  10/S1A-7 67.8 ;AL/ACSR;  10 - 150
+  BCC Soft 6 mm2 re;AL/ACSR;41-00006-01
+  BCC HD 10 mm2 re;AL/ACSR;41-00010-01
+  BCC HD 70 mm2 re;AL/ACSR;41-00010-01
+  BCC HD 240 mm2 re;AL/ACSR;41-00032-01
+  BCC HD 300 mm2 re;AL/ACSR;41-00019-01
+  ACSR/AS (A1/SA 1A) 250 mm2 rm;AL/ACSR;42-00002-01
+  ACSR/AS (A1/SA 1A) 450 mm2 rm;AL/ACSR;42-00003-03
+  T-EJ(Pem) E 1q x 0.9 mm;Telephone Cable;61-30002-01
+  T-EJ(Pem) E 2q x 0.9 mm;Telephone Cable;61-30009-01
+  T-EJ(Pem) E 2 x 2 x 0.9;Telephone Cable;61-30001-01
+  T-EJ(Pem) E 2 x 2 x 0.9;Telephone Cable;61-30001-02
+  T-EJ(Pem) E 2 x 2 x 1.5;Telephone Cable;61-30007-01
+  T-EJ(Pem) E 10 x 2 x 0.9;Telephone Cable;61-30006-02
+  U-E(Pe)ES;Telephone Cable; 60 x 2 x 0.6
+  R-V(Pe)V ;Telephone Cable; 30 x 2 x 0.6
+  R-V(Pe)V ;Telephone Cable; 50 x 2 x 0.6 
+  R-V(Pe)V 6 x 2 x 0.6 ;Telephone Cable;61-10005-01
+  R-VV 2 x 2 x 0.6 mm;Telephone Cable;61-10001-01
+  R-VV 6 x 2 x 0.6 mm;Telephone Cable;61-10003-01
+  CU/PE/PVC/SWA/PVC-DATA TWIST ARMOUR  AWG;Telephone Cable; 4 x 2 x 24
+  FIBER OPTIC AERIAL SM DA-WG;Telephone Cable; 12/12 T
+  FIBER OPTIC AERIAL SM DA-WG;Telephone Cable; 12/12 T
+  FIBER OPTIC AERIAL SM DA-WG;Telephone Cable; 12/12 T

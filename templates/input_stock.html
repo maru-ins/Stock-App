@@ -1,0 +1,169 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3 class="mb-4 fw-bold">Input Stok Mingguan</h3>
+
+<!-- FILTER SECTION -->
+<div class="card shadow-sm mb-4 p-3">
+    <div class="row g-3">
+
+        <div class="col-md-4">
+            <label class="form-label">Bulan</label>
+            <select name="bulan" class="form-select">
+                <option value="1">Januari</option>
+                <option value="2">Februari</option>
+                <option value="3">Maret</option>
+                <option value="4">April</option>
+                <option value="5">Mei</option>
+                <option value="6">Juni</option>
+                <option value="7">Juli</option>
+                <option value="8">Agustus</option>
+                <option value="9">September</option>
+                <option value="10">Oktober</option>
+                <option value="11">November</option>
+                <option value="12">Desember</option>
+            </select>
+        </div>
+
+        <div class="col-md-4">
+            <label class="form-label">Week</label>
+            <select name="minggu" class="form-select">
+                <option value="1">Week 1</option>
+                <option value="2">Week 2</option>
+                <option value="3">Week 3</option>
+                <option value="4">Week 4</option>
+            </select>
+        </div>
+
+        <div class="col-md-4">
+            <label class="form-label">Jenis Transaksi</label>
+            <select name="jenis_transaksi" required>
+                <option value="produksi">Produksi</option>
+                <option value="pengiriman">Pengiriman</option>
+                <option value="oem">OEM</option>
+            </select>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- INPUT SECTION -->
+<div class="card shadow-sm p-4">
+
+    <div class="row g-3 align-items-end mb-4">
+
+        <div class="col-md-4">
+            <label class="form-label">Kategori Kabel</label>
+            <select id="kategori" class="form-select">
+                <option value="">-- Pilih Kategori --</option>
+                {% for k in kategori %}
+                    <option value="{{ k.id }}">{{ k.nama_kategori }}</option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <div class="col-md-4">
+            <label class="form-label">Nama Kabel</label>
+            <select id="produk" class="form-select">
+                <option value="">-- Pilih Kabel --</option>
+            </select>
+        </div>
+
+        <div class="col-md-2">
+            <label class="form-label">Jumlah (km)</label>
+            <input type="number" step="0.01" id="jumlah" class="form-control">
+        </div>
+
+        <div class="col-md-2">
+            <button type="button" class="btn btn-success w-100" onclick="addRow()">
+                Add
+            </button>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <!-- TABLE -->
+    <div class="table-responsive">
+        <table class="table table-bordered align-middle text-center" id="stokTable">
+            <thead class="table-light">
+                <tr>
+                    <th style="width:80px;">No</th>
+                    <th>Nama Kabel</th>
+                    <th>Jumlah</th>
+                    <th>Kategori</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="d-flex justify-content-end gap-3 mt-3">
+        <button class="btn btn-danger px-4" onclick="clearTable()">Clear All</button>
+        <button class="btn btn-primary px-4">Save All</button>
+    </div>
+
+</div>
+
+
+<script>
+// Load produk by kategori
+document.getElementById("kategori").addEventListener("change", function() {
+    let kategoriId = this.value;
+    let produkSelect = document.getElementById("produk");
+
+    produkSelect.innerHTML = '<option value="">Loading...</option>';
+
+    if (!kategoriId) {
+        produkSelect.innerHTML = '<option value="">-- Pilih Kabel --</option>';
+        return;
+    }
+
+    fetch(`/master/produk-by-kategori/${kategoriId}`)
+        .then(res => res.json())
+        .then(data => {
+            produkSelect.innerHTML = '<option value="">-- Pilih Kabel --</option>';
+            data.forEach(item => {
+                let option = document.createElement("option");
+                option.value = item.id;
+                option.textContent = item.nama_kabel;
+                option.setAttribute("data-kategori", item.nama_kategori);
+                produkSelect.appendChild(option);
+            });
+        });
+});
+
+let counter = 1;
+
+function addRow() {
+    let produk = document.getElementById("produk");
+    let jumlah = document.getElementById("jumlah").value;
+
+    if (!produk.value || !jumlah) {
+        alert("Lengkapi data dulu!");
+        return;
+    }
+
+    let table = document.getElementById("stokTable").getElementsByTagName("tbody")[0];
+    let row = table.insertRow();
+
+    row.innerHTML = `
+        <td>${counter++}</td>
+        <td>${produk.options[produk.selectedIndex].text}</td>
+        <td>${jumlah}</td>
+        <td>${document.getElementById("kategori").options[document.getElementById("kategori").selectedIndex].text}</td>
+    `;
+
+    document.getElementById("jumlah").value = "";
+}
+
+function clearTable() {
+    document.querySelector("#stokTable tbody").innerHTML = "";
+    counter = 1;
+}
+</script>
+
+{% endblock %}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Input Stok</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="d-flex">
+
+    <!-- SIDEBAR -->
+    <div class="bg-dark text-white p-3" style="width:250px; min-height:100vh;">
+        <h4>Stock System</h4>
+        <hr>
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a href="#" class="nav-link text-white">Dashboard</a>
+            </li>
+            <li class="nav-item">
+                <a href="/templates/input_stok.html" class="nav-link text-white active">Input Stok</a>
+            </li>
+            <li class="nav-item">
+                <a href="/templates/Report_stok.html" class="nav-link text-white">Master Data</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="flex-fill p-4">
+
+        <h3 class="mb-4">Input Stok Mingguan</h3>
+
+        <!-- FILTER SECTION -->
+        <div class="card p-3 mb-4 shadow-sm">
+            <div class="row">
+                <div class="col-md-3">
+                    <label>Bulan</label>
+                    <select id="bulan" class="form-select">
+                        <option value="1">Januari</option>
+                        <option value="2">Februari</option>
+                    </select>
+                </div>
+
+                <div class="col-md-3">
+                    <label>Week</label>
+                    <select id="minggu" class="form-select">
+                        <option value="1">Week 1</option>
+                        <option value="2">Week 2</option>
+                        <option value="3">Week 3</option>
+                        <option value="4">Week 4</option>
+                    </select>
+                </div>
+
+                <div class="col-md-3">
+                    <label>Jenis Transaksi</label>
+                    <select id="jenis" class="form-select">
+                        <option value="produksi">Produksi</option>
+                        <option value="oem">OEM</option>
+                        <option value="pengiriman">Pengiriman</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- INPUT SECTION -->
+        <div class="card p-3 shadow-sm">
+            <div class="row align-items-end">
+
+                <div class="col-md-4">
+                    <label>Kategori Kabel</label>
+                    <select id="kategori" class="form-select">
+                        <option value="">-- Pilih Kategori --</option>
+                        {% for k in kategori %}
+                            <option value="{{ k.id }}">{{ k.nama_kategori }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div class="col-md-4">
+                    <label>Nama Kabel</label>
+                    <select id="produk" class="form-select">
+                        <option value="">-- Pilih Kabel --</option>
+                    </select>
+                </div>
+
+                <div class="col-md-2">
+                    <label>Jumlah (km)</label>
+                    <input type="number" id="jumlah" class="form-control">
+                </div>
+
+                <div class="col-md-2">
+                    <button onclick="addRow()" class="btn btn-success w-100">Add</button>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- TABLE -->
+            <table class="table table-bordered mt-3">
+                <thead class="table-light">
+                    <tr>
+                        <th>No</th>
+                        <th>Nama Kabel</th>
+                        <th>Jumlah</th>
+                        <th>Kategori</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+            </table>
+
+            <div class="row justify-content-end">
+                <button class="btn btn-danger mt-3 col-md-2">Clear All</button>
+                <button class="btn btn-primary mt-3 col-md-2">Save All</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+let counter = 1;
+
+// FILTER PRODUK BERDASARKAN KATEGORI
+document.getElementById("kategori").addEventListener("change", function () {
+
+    let kategoriId = this.value;
+
+    if (!kategoriId) return;
+
+    fetch(`/produk/by-kategori/${kategoriId}`)
+        .then(res => res.json())
+        .then(data => {
+            let produkSelect = document.getElementById("produk");
+            produkSelect.innerHTML = '<option value="">-- Pilih Kabel --</option>';
+
+            data.forEach(item => {
+                produkSelect.innerHTML += `
+                    <option value="${item.id}">
+                        ${item.nama_kabel}
+                    </option>
+                `;
+            });
+        })
+        .catch(err => console.error(err));
+});
+
+
+// TAMBAH KE TABLE
+function addRow() {
+
+    let produkSelect = document.getElementById("produk");
+    let kategoriSelect = document.getElementById("kategori");
+
+    let produkText = produkSelect.options[produkSelect.selectedIndex]?.text;
+    let kategoriText = kategoriSelect.options[kategoriSelect.selectedIndex]?.text;
+    let jumlah = document.getElementById("jumlah").value;
+
+    if (!produkSelect.value || !jumlah) {
+        alert("Lengkapi data!");
+        return;
+    }
+
+    let table = document.getElementById("tableBody");
+
+    table.innerHTML += `
+        <tr>
+            <td>${counter++}</td>
+            <td>${produkText}</td>
+            <td>${jumlah}</td>
+            <td>${kategoriText}</td>
+        </tr>
+    `;
+
+    document.getElementById("jumlah").value = "";
+}
+</script>
+
+</body>
+</html>

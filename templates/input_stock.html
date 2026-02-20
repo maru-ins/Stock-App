@@ -3,31 +3,24 @@
 
 <h3 class="mb-4 fw-bold">Input Stok Mingguan</h3>
 
-<!-- FILTER SECTION -->
+<form method="POST" action="/save-stok" id="stokForm">
+
+<!-- FILTER -->
 <div class="card shadow-sm mb-4 p-3">
     <div class="row g-3">
 
-        <div class="col-md-4">
+        <div class="col-md-3">
             <label class="form-label">Bulan</label>
-            <select name="bulan" class="form-select">
-                <option value="1">Januari</option>
-                <option value="2">Februari</option>
-                <option value="3">Maret</option>
-                <option value="4">April</option>
-                <option value="5">Mei</option>
-                <option value="6">Juni</option>
-                <option value="7">Juli</option>
-                <option value="8">Agustus</option>
-                <option value="9">September</option>
-                <option value="10">Oktober</option>
-                <option value="11">November</option>
-                <option value="12">Desember</option>
+            <select name="bulan" class="form-select" required>
+                {% for i in range(1,13) %}
+                <option value="{{ i }}">{{ i }}</option>
+                {% endfor %}
             </select>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-3">
             <label class="form-label">Week</label>
-            <select name="minggu" class="form-select">
+            <select name="minggu" class="form-select" required>
                 <option value="1">Week 1</option>
                 <option value="2">Week 2</option>
                 <option value="3">Week 3</option>
@@ -35,9 +28,9 @@
             </select>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-3">
             <label class="form-label">Jenis Transaksi</label>
-            <select name="jenis_transaksi" required>
+            <select name="jenis_transaksi" class="form-select" required>
                 <option value="produksi">Produksi</option>
                 <option value="pengiriman">Pengiriman</option>
                 <option value="oem">OEM</option>
@@ -48,26 +41,38 @@
 </div>
 
 
-<!-- INPUT SECTION -->
+<!-- INPUT AREA -->
 <div class="card shadow-sm p-4">
 
     <div class="row g-3 align-items-end mb-4">
 
-        <div class="col-md-4">
-            <label class="form-label">Kategori Kabel</label>
+        <div class="col-md-3">
+            <label class="form-label">Kategori</label>
             <select id="kategori" class="form-select">
                 <option value="">-- Pilih Kategori --</option>
                 {% for k in kategori %}
-                    <option value="{{ k.id }}">{{ k.nama_kategori }}</option>
+                <option value="{{ k.id }}">{{ k.nama_kategori }}</option>
                 {% endfor %}
             </select>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-3">
             <label class="form-label">Nama Kabel</label>
             <select id="produk" class="form-select">
                 <option value="">-- Pilih Kabel --</option>
+                {% for p in produk %}
+                <option value="{{ p.id }}"
+                        data-kategori="{{ p.kategori_id }}"
+                        data-kode="{{ p.kode_desain.kode_desain }}">
+                        {{ p.nama_kabel }}
+                </option>
+                {% endfor %}
             </select>
+        </div>
+
+        <div class="col-md-2">
+            <label class="form-label">Kode Desain</label>
+            <input type="text" id="kode_desain" class="form-control" readonly>
         </div>
 
         <div class="col-md-2">
@@ -76,94 +81,138 @@
         </div>
 
         <div class="col-md-2">
-            <button type="button" class="btn btn-success w-100" onclick="addRow()">
-                Add
-            </button>
+            <button type="button" class="btn btn-success w-100" onclick="addRow()">Add</button>
         </div>
 
     </div>
 
     <hr>
 
-    <!-- TABLE -->
     <div class="table-responsive">
-        <table class="table table-bordered align-middle text-center" id="stokTable">
+        <table class="table table-bordered text-center" id="stokTable">
             <thead class="table-light">
                 <tr>
-                    <th style="width:80px;">No</th>
-                    <th>Nama Kabel</th>
-                    <th>Jumlah</th>
+                    <th>No</th>
                     <th>Kategori</th>
+                    <th>Nama Kabel</th>
+                    <th>Kode Desain</th>
+                    <th>Jenis</th>
+                    <th>Jumlah</th>
+                    <th>Action</th>
                 </tr>
             </thead>
-            <tbody>
-            </tbody>
+            <tbody></tbody>
         </table>
     </div>
 
+    <input type="hidden" name="data_json" id="data_json">
+
     <div class="d-flex justify-content-end gap-3 mt-3">
-        <button class="btn btn-danger px-4" onclick="clearTable()">Clear All</button>
-        <button class="btn btn-primary px-4">Save All</button>
+        <button type="button" class="btn btn-danger" onclick="clearTable()">Clear All</button>
+        <button type="submit" class="btn btn-primary">Save All</button>
     </div>
 
 </div>
+</form>
 
 
 <script>
-// Load produk by kategori
+
+let counter = 1;
+let dataList = [];
+
+/* Filter Produk by Kategori */
 document.getElementById("kategori").addEventListener("change", function() {
     let kategoriId = this.value;
     let produkSelect = document.getElementById("produk");
 
-    produkSelect.innerHTML = '<option value="">Loading...</option>';
-
-    if (!kategoriId) {
-        produkSelect.innerHTML = '<option value="">-- Pilih Kabel --</option>';
-        return;
+    for (let option of produkSelect.options) {
+        if (!option.value) continue;
+        option.style.display =
+            option.getAttribute("data-kategori") === kategoriId
+            ? "block" : "none";
     }
 
-    fetch(`/master/produk-by-kategori/${kategoriId}`)
-        .then(res => res.json())
-        .then(data => {
-            produkSelect.innerHTML = '<option value="">-- Pilih Kabel --</option>';
-            data.forEach(item => {
-                let option = document.createElement("option");
-                option.value = item.id;
-                option.textContent = item.nama_kabel;
-                option.setAttribute("data-kategori", item.nama_kategori);
-                produkSelect.appendChild(option);
-            });
-        });
+    produkSelect.value = "";
+    document.getElementById("kode_desain").value = "";
 });
 
-let counter = 1;
+/* Show Kode Desain */
+document.getElementById("produk").addEventListener("change", function() {
+    let selected = this.options[this.selectedIndex];
+    document.getElementById("kode_desain").value =
+        selected.getAttribute("data-kode") || "";
+});
+
 
 function addRow() {
+
+    let kategori = document.getElementById("kategori");
     let produk = document.getElementById("produk");
     let jumlah = document.getElementById("jumlah").value;
+    let jenis = document.querySelector("select[name='jenis_transaksi']").value;
 
-    if (!produk.value || !jumlah) {
+    if (!kategori.value || !produk.value || !jumlah) {
         alert("Lengkapi data dulu!");
         return;
     }
 
-    let table = document.getElementById("stokTable").getElementsByTagName("tbody")[0];
+    let kategoriText = kategori.options[kategori.selectedIndex].text;
+    let produkText = produk.options[produk.selectedIndex].text;
+    let kode = produk.options[produk.selectedIndex].getAttribute("data-kode");
+
+    let table = document.querySelector("#stokTable tbody");
     let row = table.insertRow();
 
     row.innerHTML = `
         <td>${counter++}</td>
-        <td>${produk.options[produk.selectedIndex].text}</td>
+        <td>${kategoriText}</td>
+        <td>${produkText}</td>
+        <td>${kode}</td>
+        <td>${jenis}</td>
         <td>${jumlah}</td>
-        <td>${document.getElementById("kategori").options[document.getElementById("kategori").selectedIndex].text}</td>
+        <td><button class="btn btn-sm btn-danger" onclick="deleteRow(this)">X</button></td>
     `;
+
+    dataList.push({
+        produk_id: produk.value,
+        kode_desain: kode,
+        jumlah: jumlah,
+        jenis: jenis
+    });
 
     document.getElementById("jumlah").value = "";
 }
 
+
+/* Delete Row */
+function deleteRow(btn) {
+    let row = btn.closest("tr");
+    let index = row.rowIndex - 1;
+    dataList.splice(index, 1);
+    row.remove();
+}
+
+
+/* Clear All */
 function clearTable() {
     document.querySelector("#stokTable tbody").innerHTML = "";
+    dataList = [];
     counter = 1;
 }
+
+
+/* Submit */
+document.getElementById("stokForm").addEventListener("submit", function(e) {
+    if (dataList.length === 0) {
+        alert("Belum ada data!");
+        e.preventDefault();
+        return;
+    }
+
+    document.getElementById("data_json").value = JSON.stringify(dataList);
+});
+
 </script>
 
 {% endblock %}

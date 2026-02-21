@@ -1,13 +1,33 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h3 class="mb-4 fw-bold">Input Stok Mingguan</h3>
+<h3 class="mb-4 fw-bold">Input Stock Awal Bulanan</h3>
 
-<form method="POST" action="/save-stok" id="stokForm">
+<form method="POST" action="/save-stock-awal" id="stockAwalForm">
 
-<!-- FILTER -->
+<div class="card shadow-sm mb-3 p-3">
+    <div class="row g-3">
+        <div class="col-md-3">
+            <input type="number" id="gen_tahun" class="form-control" placeholder="Tahun">
+        </div>
+        <div class="col-md-3">
+            <input type="number" id="gen_bulan" class="form-control" placeholder="Bulan">
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-warning w-100" onclick="generateStockAwal()">
+                Generate dari Bulan Sebelumnya
+            </button>
+        </div>
+    </div>
+</div>
+
 <div class="card shadow-sm mb-4 p-3">
     <div class="row g-3">
+
+        <div class="col-md-3">
+            <label class="form-label">Tahun</label>
+            <input type="number" name="tahun" class="form-control" required>
+        </div>
 
         <div class="col-md-3">
             <label class="form-label">Bulan</label>
@@ -18,30 +38,10 @@
             </select>
         </div>
 
-        <div class="col-md-3">
-            <label class="form-label">Week</label>
-            <select name="minggu" class="form-select" required>
-                <option value="1">Week 1</option>
-                <option value="2">Week 2</option>
-                <option value="3">Week 3</option>
-                <option value="4">Week 4</option>
-            </select>
-        </div>
-
-        <div class="col-md-3">
-            <label class="form-label">Jenis Transaksi</label>
-            <select name="jenis_transaksi" class="form-select" required>
-                <option value="produksi">Produksi</option>
-                <option value="pengiriman">Pengiriman</option>
-                <option value="oem">OEM</option>
-            </select>
-        </div>
-
     </div>
 </div>
 
 
-<!-- INPUT AREA -->
 <div class="card shadow-sm p-4">
 
     <div class="row g-3 align-items-end mb-4">
@@ -76,7 +76,7 @@
         </div>
 
         <div class="col-md-2">
-            <label class="form-label">Jumlah (km)</label>
+            <label class="form-label">Stock Awal (km)</label>
             <input type="number" step="0.01" id="jumlah" class="form-control">
         </div>
 
@@ -89,15 +89,14 @@
     <hr>
 
     <div class="table-responsive">
-        <table class="table table-bordered text-center" id="stokTable">
+        <table class="table table-bordered text-center" id="stockTable">
             <thead class="table-light">
                 <tr>
                     <th>No</th>
                     <th>Kategori</th>
                     <th>Nama Kabel</th>
                     <th>Kode Desain</th>
-                    <th>Jenis</th>
-                    <th>Jumlah</th>
+                    <th>Stock Awal</th>
                     <th>Action</th>
                 </tr>
             </thead>
@@ -115,13 +114,11 @@
 </div>
 </form>
 
-
 <script>
 
-let counter = 1;
 let dataList = [];
 
-/* Filter Produk by Kategori */
+/* Filter Produk */
 document.getElementById("kategori").addEventListener("change", function() {
     let kategoriId = this.value;
     let produkSelect = document.getElementById("produk");
@@ -137,7 +134,7 @@ document.getElementById("kategori").addEventListener("change", function() {
     document.getElementById("kode_desain").value = "";
 });
 
-/* Show Kode Desain */
+/* Show Kode */
 document.getElementById("produk").addEventListener("change", function() {
     let selected = this.options[this.selectedIndex];
     document.getElementById("kode_desain").value =
@@ -145,12 +142,31 @@ document.getElementById("produk").addEventListener("change", function() {
 });
 
 
+function generateStockAwal() {
+
+    let tahun = document.getElementById("gen_tahun").value;
+    let bulan = document.getElementById("gen_bulan").value;
+
+    if (!tahun || !bulan) {
+        alert("Isi tahun dan bulan dulu!");
+        return;
+    }
+
+    fetch(`/generate-stock-awal?tahun=${tahun}&bulan=${bulan}`, {
+        method: "POST"
+    })
+    .then(res => res.json())
+    .then(data => {
+        alert(data.status || data.error);
+    });
+}
+
+
 function addRow() {
 
     let kategori = document.getElementById("kategori");
     let produk = document.getElementById("produk");
     let jumlah = document.getElementById("jumlah").value;
-    let jenis = document.querySelector("select[name='jenis_transaksi']").value;
 
     if (!kategori.value || !produk.value || !jumlah) {
         alert("Lengkapi data dulu!");
@@ -161,9 +177,7 @@ function addRow() {
     let produkText = produk.options[produk.selectedIndex].text;
     let kode = produk.options[produk.selectedIndex].getAttribute("data-kode");
 
-    let tableBody = document.querySelector("#stokTable tbody");
-
-    // Nomor otomatis berdasarkan jumlah row
+    let tableBody = document.querySelector("#stockTable tbody");
     let nomor = tableBody.rows.length + 1;
 
     let row = tableBody.insertRow();
@@ -173,39 +187,35 @@ function addRow() {
         <td>${kategoriText}</td>
         <td>${produkText}</td>
         <td>${kode}</td>
-        <td>${jenis}</td>
         <td>${jumlah}</td>
-        <td>
-            <button type="button" class="btn btn-sm btn-danger" onclick="deleteRow(this)">X</button>
-        </td>
+        <td><button type="button" class="btn btn-sm btn-danger" onclick="deleteRow(this)">X</button></td>
     `;
+
+    dataList.push({
+        produk_id: produk.value,
+        jumlah: jumlah
+    });
 
     document.getElementById("jumlah").value = "";
 }
 
-
-/* Delete Row */
 function deleteRow(btn) {
-
     let row = btn.closest("tr");
     row.remove();
 
-    // Re-number ulang
-    let rows = document.querySelectorAll("#stokTable tbody tr");
+    let rows = document.querySelectorAll("#stockTable tbody tr");
     rows.forEach((tr, index) => {
         tr.cells[0].innerText = index + 1;
     });
 }
 
-
-/* Clear All */
 function clearTable() {
-    document.querySelector("#stokTable tbody").innerHTML = "";
+    document.querySelector("#stockTable tbody").innerHTML = "";
+    dataList = [];
 }
 
+document.getElementById("stockAwalForm").addEventListener("submit", function(e) {
 
-/* Submit */
-document.getElementById("stokForm").addEventListener("submit", function(e) {
     if (dataList.length === 0) {
         alert("Belum ada data!");
         e.preventDefault();

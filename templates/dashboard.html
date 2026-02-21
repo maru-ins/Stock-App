@@ -1,29 +1,158 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h3>Dashboard</h3>
+<h3 class="fw-bold mb-4">📊 Dashboard Stock {{ bulan }}/{{ tahun }}</h3>
 
-<div class="row mt-4">
-    <div class="col-md-4">
-        <div class="card p-3 text-center shadow">
+<!-- FILTER -->
+<form class="row mb-4">
+    <div class="col-md-2">
+        <input type="number" name="tahun" value="{{ tahun }}" class="form-control">
+    </div>
+    <div class="col-md-2">
+        <input type="number" name="bulan" value="{{ bulan }}" class="form-control" min="1" max="12">
+    </div>
+    <div class="col-md-2">
+        <button class="btn btn-primary">Filter</button>
+    </div>
+</form>
+
+<!-- KPI CARDS -->
+<div class="row mb-4">
+
+    <div class="col-md-3">
+        <div class="card shadow p-3 text-center">
             <h6>Total Produksi</h6>
-            <h3 class="text-success">{{ total_produksi }}</h3>
+            <h4>{{ total_produksi }}</h4>
         </div>
     </div>
 
-    <div class="col-md-4">
-        <div class="card p-3 text-center shadow">
+    <div class="col-md-3">
+        <div class="card shadow p-3 text-center">
             <h6>Total Pengiriman</h6>
-            <h3 class="text-danger">{{ total_pengiriman }}</h3>
+            <h4>{{ total_pengiriman }}</h4>
         </div>
     </div>
 
-    <div class="col-md-4">
-        <div class="card p-3 text-center shadow">
-            <h6>Stok Akhir</h6>
-            <h3 class="text-primary">{{ stok_akhir }}</h3>
+    <div class="col-md-3">
+        <div class="card shadow p-3 text-center">
+            <h6>Total Stock</h6>
+            <h4>{{ total_stock }}</h4>
         </div>
     </div>
+
+    <div class="col-md-3">
+        <div class="card shadow p-3 text-center bg-light">
+            <h6>Selisih</h6>
+            <h4>{{ total_produksi - total_pengiriman }}</h4>
+        </div>
+    </div>
+
 </div>
+
+{% if warning_stock %}
+<div class="alert alert-danger">
+     Stock Minus pada kategori: {{ warning_stock | join(", ") }}
+</div>
+{% endif %}
+
+<div class="row">
+
+    <!-- BAR CHART -->
+    <div class="col-md-6">
+        <div class="card shadow p-3">
+            <h6>Stock Akhir per Kategori</h6>
+            <canvas id="barChart"></canvas>
+        </div>
+    </div>
+
+    <!-- PIE CHART -->
+    <div class="col-md-6">
+        <div class="card shadow p-3">
+            <h6>Distribusi Produksi</h6>
+            <canvas id="pieChart"></canvas>
+        </div>
+    </div>
+
+</div>
+
+<div class="card shadow p-4 mt-4">
+    <h6>Trend Stock 12 Bulan</h6>
+    <canvas id="lineChart"></canvas>
+</div>
+
+<script>
+    const chartData = {
+        labels: {{ labels | tojson | safe }},
+        stockAkhir: {{ stock_akhir | tojson | safe }},
+        produksi: {{ produksi_data | tojson | safe }},
+        trendLabels: {{ trend_labels | tojson | safe }},
+        trendStock: {{ trend_stock | tojson | safe }}
+    };
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+
+// BAR
+<script>
+    const chartData = {
+        labels: {{ labels | tojson | safe }},
+        stockAkhir: {{ stock_akhir | tojson | safe }},
+        produksi: {{ produksi_data | tojson | safe }},
+        trendLabels: {{ trend_labels | tojson | safe }},
+        trendStock: {{ trend_stock | tojson | safe }}
+    };
+</script>
+
+// PIE
+<script>
+new Chart(document.getElementById('pieChart'), {
+    type: 'pie',
+    data: {
+        labels: chartData.labels || [],
+        datasets: [{
+            data: chartData.produksi || [],
+            backgroundColor: [
+                '#4e73df',
+                '#1cc88a',
+                '#36b9cc',
+                '#f6c23e',
+                '#e74a3b'
+            ]
+        }]
+    },
+    options: {
+        responsive: true
+    }
+});
+</script>
+
+// LINE
+<script>
+new Chart(document.getElementById('lineChart'), {
+    type: 'line',
+    data: {
+        labels: chartData.trendLabels || [],
+        datasets: [{
+            label: 'Trend Stock',
+            data: chartData.trendStock || [],
+            borderColor: '#4e73df',
+            tension: 0.3,
+            fill: false
+        }]
+    },
+    options: {
+        responsive: true,
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+</script>
+
+</script>
 
 {% endblock %}

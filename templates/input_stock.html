@@ -161,7 +161,6 @@ function addRow() {
     let produkText = produk.options[produk.selectedIndex].text;
     let kode = produk.options[produk.selectedIndex].getAttribute("data-kode");
 
-<<<<<<< HEAD
     let tableBody = document.querySelector("#stokTable tbody");
 
     // Nomor otomatis berdasarkan jumlah row
@@ -171,25 +170,14 @@ function addRow() {
 
     row.innerHTML = `
         <td>${nomor}</td>
-=======
-    let table = document.querySelector("#stokTable tbody");
-    let row = table.insertRow();
-
-    row.innerHTML = `
-        <td>${counter++}</td>
->>>>>>> ad2559fbddb5278278014fba5ebc4792954960b6
         <td>${kategoriText}</td>
         <td>${produkText}</td>
         <td>${kode}</td>
         <td>${jenis}</td>
         <td>${jumlah}</td>
-<<<<<<< HEAD
         <td>
             <button type="button" class="btn btn-sm btn-danger" onclick="deleteRow(this)">X</button>
         </td>
-=======
-        <td><button class="btn btn-sm btn-danger" onclick="deleteRow(this)">X</button></td>
->>>>>>> ad2559fbddb5278278014fba5ebc4792954960b6
     `;
 
     dataList.push({
@@ -205,7 +193,6 @@ function addRow() {
 
 /* Delete Row */
 function deleteRow(btn) {
-<<<<<<< HEAD
 
     let row = btn.closest("tr");
     row.remove();
@@ -215,23 +202,12 @@ function deleteRow(btn) {
     rows.forEach((tr, index) => {
         tr.cells[0].innerText = index + 1;
     });
-=======
-    let row = btn.closest("tr");
-    let index = row.rowIndex - 1;
-    dataList.splice(index, 1);
-    row.remove();
->>>>>>> ad2559fbddb5278278014fba5ebc4792954960b6
 }
 
 
 /* Clear All */
 function clearTable() {
     document.querySelector("#stokTable tbody").innerHTML = "";
-<<<<<<< HEAD
-=======
-    dataList = [];
-    counter = 1;
->>>>>>> ad2559fbddb5278278014fba5ebc4792954960b6
 }
 
 
